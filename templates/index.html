@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-offset-1 col-md-10">
+      {% for article in articles_page.object_list %}
+        <article>
+          <p>{{ article.locale_date }}</p>
+          <div>
+            <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+          </div>
+          <div>
+            {{ article.summary }}
+          </div>
+        </article>
+        {% if not loop.last %}
+          <hr/>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block foot %}
+  {% include "_include/pagination.html" %}
+{% endblock %}
