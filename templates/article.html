@@ -10,17 +10,17 @@
 
 {% block content %}
   <div class="col-md-offset-1 col-md-10">
-    <div id="article_title" class="row">
+    <div class="row article_title">
       <h3><a href="{{ SITEURL }}/{{ article.url }}" class="h3">{{ article.title }}</a></h3>
     </div>
-    <div id="article" class="row">
+    <div class="row article">
       <p>...</p>
-      <div id="article_text">
+      <div class="article_text">
         {{ article.content }}
       </div>
       <p>...</p>
     </div>
-    <div id="article_meta" class="row">
+    <div class="row article_meta">
       <div>
         <p><i class="fa fa-calendar-plus-o"></i> {{ article.locale_date }} |
         <i class="fa fa-folder-open-o"></i> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> |
@@ -34,7 +34,7 @@
     </div>
 
     {% if DISQUS_SITENAME %}
-      <div id="article_comments">
+      <div class="article_comments">
         {% include "_include/disqus.html" %}
       </div>
     {% endif %}

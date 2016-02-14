@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+  | {{ page.title }}
+{% endblock %}
+
+{% block content %}
+  <div class="col-md-offset-1 col-md-10">
+    <div class="row article_title">
+      <h3><a href="{{ SITEURL }}/{{ page.url }}" class="h3">{{ page.title }}</h3>
+    </div>
+    <div class="row article">
+      <p>...</p>
+      <div class="article_text">
+        {{ page.content }}
+      </div>
+      <p>...</p>
+    </div>
+    <div class="row article_meta">
+      <p><i class="fa fa-calendar-plus-o"></i> {{ article.locale_date }}
+    </div>
+  </div>
+{% endblock %}
