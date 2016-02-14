@@ -49,6 +49,14 @@ blockquote {
   color: #649098;
 }
 
+footer p {
+  font-size: .8em;
+  color: #93a1a1;
+  text-align: right;
+}
+
+
+
 dl#archive {
   margin-bottom: 0;
 }
@@ -79,9 +87,10 @@ article div.gist{
   margin-bottom: 0;
 }
 
-#site_title {
+#site_title span a {
+  color: #000;
 }
 
-#site_article{
+#site_article {
   margin-top: 20px;
 }

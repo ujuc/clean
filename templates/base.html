@@ -13,9 +13,6 @@
               {% for name, link in LINKS %}
                 <li><a href="{{ link }}">{{ name }}</a></li>
               {% endfor %}
-              {% for name, link, fa in SOCIAL %}
-                <li><a href="{{ link }}"><i class="fa {{ fa }}"></i> {{ name }}</a></li>
-              {% endfor %}
             {% endif %}
           </ul>
         </div>
@@ -40,15 +37,24 @@
   </div>
 
   <div id="site_title" class="container">
-    <div class="row">
-      <div class="col-md-offset-1 col-md-10">
+    <div class="col-md-offset-1 col-md-10">
+      <div class="row">
         <hr />
         <h3><a href="{{ SITEURL }}" class="h3">{{ SITENAME }}</a></h3>
       </div>
-      <div class="col-md-offset-1 col-md-10">
+      <div class="row">
         <p>{{ SITESUBTITLE }}</p>
       </div>
+      <div class="row">
+        {% for name, link, fa in SOCIAL %}
+          <span><a href="{{ link }}"><i class="fa {{ fa }}"></i></a></span>
+        {% endfor %}
+      </div>
     </div>
+  </div>
+
+  <div id="site_footer" class="container">
+    {% include "_include/footer.html" %}
   </div>
 
   {% include "_include/js.html" %}
