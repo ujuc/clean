@@ -1,12 +1,26 @@
+body {
+  font-family: NotoSansKR, sans-serif;
+  font-size: 16px;
+}
+
+code pre kbd {
+  font-family: Inconsolata, monospace;
+}
+
 dl#archive > dt{
-  font-family: Inconsolata;
+  font-family: Inconsolata, sans-serif;
   font-size: 16px;
 }
 
 dl#archive > dd{
-  font-family: NotoSansKR;
+  font-family: NotoSansKR, sans-serif;
   font-size: 14px;
   margin-left: 15px;
+}
+
+.toc {
+  font-family: NanumCoding, monospace;
+  font-size: .9em;
 }
 
 #site-title {

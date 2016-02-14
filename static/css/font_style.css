@@ -1,9 +1,14 @@
 @font-face {
-    font-family: NotoSansKR;
-    src: url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+  font-family: NotoSansKR, sans-serif;
+  src: url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 }
 
 @font-face {
-    font-family: Inconsolata;
-    src: url(https://fonts.googleapis.com/css?family=Inconsolata);
+  font-family: Inconsolata, monospace;
+  src: url(https://fonts.googleapis.com/css?family=Inconsolata);
+}
+
+@font-face {
+  font-family: NanumCoding, monospace;
+  src: url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 }
