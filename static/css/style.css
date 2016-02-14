@@ -1,14 +1,14 @@
-dt {
-    font-family: Inconsolata;
-    font-size: 16px;
+dl#archive > dt{
+  font-family: Inconsolata;
+  font-size: 16px;
 }
 
-dd {
-    font-family: NotoSansKR;
-    font-size: 12px;
-    margin-left: 15px;
+dl#archive > dd{
+  font-family: NotoSansKR;
+  font-size: 14px;
+  margin-left: 15px;
 }
 
 #site-title {
-    margin-top: 10px;
+  margin-top: 10px;
 }
