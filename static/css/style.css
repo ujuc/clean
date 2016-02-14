@@ -3,8 +3,11 @@ body {
   font-size: 16px;
 }
 
-code pre kbd {
+code {
   font-family: Inconsolata, monospace;
+  font-size: 14px;
+  color: rgba(195, 35, 42, 0.83);
+  background: rgba(245, 100, 57, 0.33);
 }
 
 dl#archive {
@@ -14,11 +17,14 @@ dl#archive > dt{
   font-family: Inconsolata, sans-serif;
   font-size: 16px;
 }
-
 dl#archive > dd{
   font-family: NotoSansKR, sans-serif;
   font-size: 14px;
   margin-left: 15px;
+}
+
+article div.gist{
+  line-height: .875em;
 }
 
 .toc {
