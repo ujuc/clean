@@ -1,14 +1,49 @@
 {% include "_include/header.html" %}
 
 <body>
-  <div class="container">
-    {% block content %}
-    {% endblock %}
-  </div>
+  <header>
+    <div class="container">
+        <div class="col-md-offset-1 col-md-10">
+          <ul class="nav nav-pills">
+            {% for name, link, fa in MENUITEMS %}
+              <li class="presentation"><a hef="{{ link }}"><i class="fa {{ fa }}"></i> {{ name }}</a></li>
+            {% endfor %}
+            {% if DISPLAY_PAGES_ON_MENU %}
+              {% for name, link in LINKS %}
+                <li><a href="{{ link }}">{{ name }}</a></li>
+              {% endfor %}
+              {% for name, link, fa in SOCIAL %}
+                <li><a href="{{ link }}"><i class="fa {{ fa }}"></i> {{ name }}</a></li>
+              {% endfor %}
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <article>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </article>
 
   <div class="container">
     {% block foot %}
     {% endblock %}
+  </div>
+
+  <div id="site-title" class="container">
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10">
+        <hr />
+        <a href="{{ SITEURL }}" class="h3">{{ SITENAME }}</a>
+      </div>
+      <div class="col-md-offset-1 col-md-10">
+        <p>{{ SITESUBTITLE }}</p>
+      </div>
+    </div>
   </div>
 
   {% include "_include/js.html" %}
