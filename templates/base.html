@@ -1,9 +1,10 @@
 {% include "_include/header.html" %}
 
 <body>
-  <header>
-    <div class="container">
-        <div class="col-md-offset-1 col-md-10">
+  <div class="container">
+    <header>
+      <div class="col-md-offset-1 col-md-10">
+        <div class="row">
           <ul class="nav nav-pills">
             {% for name, link, fa in MENUITEMS %}
               <li class="presentation"><a href="{{ link }}"><i class="fa {{ fa }}"></i> {{ name }}</a></li>
@@ -19,8 +20,8 @@
           </ul>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
+  </div>
 
   <div id="site_article" class="container">
     <article>

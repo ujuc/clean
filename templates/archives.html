@@ -6,11 +6,13 @@
 
 {% block content %}
   <div class="col-md-offset-1 col-md-10">
-    <dl id="archive">
-      {% for article in dates %}
-        <dt>{{ article.locale_date }}</dt>
-        <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-      {% endfor %}
-    </dl>
+    <div class="row">
+      <dl id="archive">
+        {% for article in dates %}
+          <dt>{{ article.locale_date }}</dt>
+          <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+        {% endfor %}
+      </dl>
+    </div>
   </div>
 {% endblock %}
