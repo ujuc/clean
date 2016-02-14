@@ -1,6 +1,8 @@
 body {
   font-family: NotoSansKR, sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 code {
@@ -10,14 +12,51 @@ code {
   background: rgba(245, 100, 57, 0.33);
 }
 
-dl#archive {
+div.article_text p {
+  margin-left: 10px;
+}
+
+td, th {
+  padding: 10px;
+}
+
+div.article_text table {
+  margin-bottom: 5px;
+  background: rgba(0, 0, 0, 0.03);
+  margin-left: 10px;
+}
+
+div.article_text dl {
+  margin-left: 10px;
   margin-bottom: 0;
 }
-dl#archive > dt{
+div.article_text dl dt {
   font-family: Inconsolata, sans-serif;
   font-size: 16px;
 }
-dl#archive > dd{
+div.article_text dl dd {
+  font-family: NotoSansKR, sans-serif;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+blockquote {
+  font-size: .9em;
+  color: #649098;
+}
+
+dl#archive {
+  margin-bottom: 0;
+}
+dl#archive > dt {
+  font-family: Inconsolata, sans-serif;
+  font-size: 16px;
+}
+dl#archive > dd {
   font-family: NotoSansKR, sans-serif;
   font-size: 14px;
   margin-left: 15px;

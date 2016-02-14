@@ -5,13 +5,9 @@
     <div class="col-md-offset-1 col-md-10">
       {% for article in articles_page.object_list %}
         <article>
-          <p>{{ article.locale_date }}</p>
-          <div>
-            <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-          </div>
-          <div>
-            {{ article.summary }}
-          </div>
+          <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+          <p>{{ article.summary }}</p>
+          <p><i class="fa fa-calendar-plus-o"></i> {{ article.locale_date }}</p>
         </article>
         {% if not loop.last %}
           <hr/>
