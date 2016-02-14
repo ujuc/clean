@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+
+{% block title %}
+| Tag: {{ tag }}
+{% endblock %}
+
+{% block head %}
+  {% if TAG_FEED_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} {{ tag }} Tag Atom" />
+  {% endif %}
+
+  {% if TAG_FEED_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} {{ tag }} Tag Rss" />
+  {% endif %}
+{% endblock %}
+
+{% block header %}
+  <div class="alert alert-warning">
+    <i class="fa fa-tags"></i> Tag: {{ tag }}
+    {% if TAG_FEED_ATOM %}
+      | <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" class="alert-link">Atom <i class="fa fa-rss"></i></a>
+    {% endif %}
+    {% if TAG_FEED_RSS %}
+      | <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" class="alert-link">RSS <i class="fa fa-rss"></i></a>
+    {% endif %}
+  </div>
+{% endblock %}
