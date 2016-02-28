@@ -2,7 +2,7 @@
 
 {% block content %}
   <div class="row">
-    <div class="col-md-offset-1 col-md-10">
+    <div class="col-xs-offset-1 col-md-offset-1 col-xs-10 col-md-10">
       {% for article in articles_page.object_list %}
         <article>
           <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
