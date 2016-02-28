@@ -10,4 +10,4 @@
 
 ## Demo
 
-* [me blog](https://ujuc.githug.io)
+* [me blog](https://ujuc.github.io)
