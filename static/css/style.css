@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-code {
+code, tt {
   font-family: Inconsolata, monospace;
   font-size: 14px;
   color: rgba(195, 35, 42, 0.83);
@@ -55,6 +55,9 @@ footer p {
   text-align: right;
 }
 
+table {
+  border: 1px;
+}
 
 
 dl#archive {
@@ -85,6 +88,15 @@ article div.gist{
 
 .alert {
   margin-bottom: 0;
+}
+
+.footnote-reference {
+  vertical-align: super;
+  font-size: 75%;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
 }
 
 #site_title span a {
