@@ -21,6 +21,7 @@ div.codehilite > pre {
   color: #93a1a1;
   font-family: Inconsolata, monospace;
   font-size: 14px;
+  margin-left: 10px;
 }
 .code {
   background-color: #002b36;

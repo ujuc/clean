@@ -14,22 +14,26 @@
       <h1><a href="{{ SITEURL }}/{{ article.url }}" class="h1">{{ article.title }}</a></h1>
     </div>
     <div class="row article">
-      <p>...</p>
+      <p><i class="fa fa-flash"></i></p>
       <div class="article_text">
         {{ article.content }}
       </div>
-      <p>...</p>
+      <p><i class="fa fa-hand-spock-o"></i></p>
     </div>
     <div class="row article_meta">
       <div>
-        <p><i class="fa fa-calendar-plus-o"></i> {{ article.locale_date }} |
-        <i class="fa fa-folder-open-o"></i> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> |
-        <i class="fa fa-tags">
-          {% for tag in article.tags %}
-            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
-            {% if not loop.last %}, {% endif %}
-          {% endfor %}
-        </i></p>
+        <p>
+          <i class="fa fa-calendar-plus-o"></i> {{ article.locale_date }}
+        <i class="fa fa-ellipsis-v"> </i>
+          <i class="fa fa-folder-open-o"></i> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+        <i class="fa fa-ellipsis-v"> </i>
+          <i class="fa fa-tags">
+            {% for tag in article.tags %}
+              <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+              {% if not loop.last %}, {% endif %}
+            {% endfor %}
+          </i>
+        </p>
       </div>
     </div>
 

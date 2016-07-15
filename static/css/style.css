@@ -10,6 +10,20 @@ code, tt {
   font-size: 14px;
   color: rgba(195, 35, 42, 0.83);
   background: rgba(245, 100, 57, 0.33);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+div.codehilite pre {
+  font-family: Inconsolata, monospace;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+pre.code {
+  font-family: Inconsolata, monospace;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 div.article_text p {
