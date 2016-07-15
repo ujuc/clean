@@ -4,23 +4,24 @@
       <ul class="pagination center">
         {% if articles_page.has_previous() %}
           {% if articles_page.previous_page_number() == 1 %}
-            <li class="prev">
-              <a href="{{ SITEURL }}/{{ page_name }}.html"><i class="fa fa-arrow-circle-left"></i> Prev</a>
+            <li class="page-item">
+              <a href="{{ SITEURL }}/{{ page_name }}.html"><i class="fa fa-arrow-circle-left"></i> Next</a>
             </li>
           {% else %}
-            <li class="prev">
-              <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html"><i class="fa fa-arrow-circle-left"></i> Prev</a>
+            <li class="page-item">
+              <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html"><i class="fa fa-arrow-circle-left"></i> Next</a>
             </li>
           {% endif %}
         {% else %}
-          <li class="prev disabled"><a rel="prev"><i class="fa fa-arrow-circle-left"></i> Prev</a></li>
+          <li class="page-item"><a rel="next"><i class="fa fa-times"></i> Next</a></li>
         {% endif %}
+      <i class="fa fa-dot-circle-o text-danger"></i>
         {% if articles_page.has_next() %}
-          <li class="next">
-            <a href="{{ STIEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">Next <i class="fa fa-arrow-circle-right"></i></a>
+          <li class="page-item">
+            <a href="{{ STIEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">Prev <i class="fa fa-arrow-circle-right"></i></a>
           </li>
         {% else %}
-          <li class="next disabled"><a rel="next">Next <i class="fa fa-arrow-circle-right"></i></a></li>
+          <li class="page-item"><a rel="prev">Prev <i class="fa fa-times"></i></a></li>
         {% endif %}
       </ul>
     </div>

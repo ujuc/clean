@@ -1,62 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+
 {% include "_include/header.html" %}
 
-<body>
-  <div class="container">
-    <header>
+  <body>
+    <div class="container">
+      <header>
+        <div class="col-xs-offset-1 col-md-offset-1 col-xs-10 col-md-10">
+          <div class="row">
+            <nav class="nav nav-inline">
+              {% for name, link, fa in MENUITEMS %}
+                <a class="nav-link" href="{{ link }}"><i class="fa {{ fa }}"></i> <span class="hidden-xs">{{ name }}</span> </a>
+              {% endfor %}
+              {% if DISPLAY_PAGES_ON_MENU %}
+                {% for name, link in LINKS %}
+                  <a class="nav-link" href="{{ link }}"><i class="fa fa-laptop"></i> {{ name }}</a>
+                {% endfor %}
+              {% endif %}
+            </nav>
+          </div>
+          <div class="row">
+            {% block head %}
+            {% endblock %}
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div id="site_article" class="container">
+      <article>
+        {% block content %}
+        {% endblock %}
+      </article>
+    </div>
+
+    <div class="container">
+      {% block foot %}
+      {% endblock %}
+    </div>
+
+    <!-- Title -->
+    <div id="site_title" class="container">
       <div class="col-xs-offset-1 col-md-offset-1 col-xs-10 col-md-10">
         <div class="row">
-          <ul class="nav nav-pills">
-            {% for name, link, fa in MENUITEMS %}
-              <li class="presentation"><a href="{{ link }}"><i class="fa {{ fa }}"></i> <span class="hidden-xs">{{ name }}</span></a></li>
-            {% endfor %}
-            {% if DISPLAY_PAGES_ON_MENU %}
-              {% for name, link in LINKS %}
-                <li><a href="{{ link }}">{{ name }}</a></li>
-              {% endfor %}
-            {% endif %}
-          </ul>
+          <hr />
+          <h3><a href="{{ SITEURL }}" class="h3">{{ SITENAME }}</a></h3>
         </div>
         <div class="row">
-          {% block header %}
-          {% endblock %}
+          <p>{{ SITESUBTITLE }}</p>
+        </div>
+        <div class="row">
+          {% for name, link, fa in SOCIAL %}
+            <span><a href="{{ link }}"><i class="fa {{ fa }}"></i> </a></span>
+          {% endfor %}
         </div>
       </div>
-    </header>
-  </div>
-
-  <div id="site_article" class="container">
-    <article>
-      {% block content %}
-      {% endblock %}
-    </article>
-  </div>
-
-  <div class="container">
-    {% block foot %}
-    {% endblock %}
-  </div>
-
-  <div id="site_title" class="container">
-    <div class="col-xs-offset-1 col-md-offset-1 col-xs-10 col-md-10">
-      <div class="row">
-        <hr />
-        <h3><a href="{{ SITEURL }}" class="h3">{{ SITENAME }}</a></h3>
-      </div>
-      <div class="row">
-        <p>{{ SITESUBTITLE }}</p>
-      </div>
-      <div class="row">
-        {% for name, link, fa in SOCIAL %}
-          <span><a href="{{ link }}"><i class="fa {{ fa }}"></i> </a></span>
-        {% endfor %}
-      </div>
     </div>
-  </div>
 
-  <div id="site_footer" class="container">
-    {% include "_include/footer.html" %}
-  </div>
+    <div id="site_footer" class="container">
+      {% include "_include/footer.html" %}
+    </div>
 
-  {% include "_include/js.html" %}
-</body>
+    {% include "_include/js.html" %}
+  </body>
 </html>
