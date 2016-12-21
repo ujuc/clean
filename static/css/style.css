@@ -26,6 +26,10 @@ pre.code {
   border-radius: 5px;
 }
 
+pre {
+  margin: 0;
+}
+
 div.article_text p {
   margin-left: 10px;
 }
@@ -90,6 +94,8 @@ dl#archive > dd {
 article div.gist{
   line-height: .875em;
 }
+
+/* class */
 
 .toc {
   font-family: NanumCoding, monospace;
