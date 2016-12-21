@@ -18,16 +18,19 @@ div.codehilite pre {
   font-family: Inconsolata, monospace;
   padding: 10px;
   border-radius: 5px;
+  margin: 0;
+}
+
+div.linenodiv pre {
+  font-family: Inconsolata, monospace;
+  pendding: 10px;
+  margin: 0;
 }
 
 pre.code {
   font-family: Inconsolata, monospace;
   padding: 10px;
   border-radius: 5px;
-}
-
-pre {
-  margin: 0;
 }
 
 div.article_text p {
@@ -42,6 +45,10 @@ div.article_text table {
   margin-bottom: 5px;
   background: rgba(0, 0, 0, 0.03);
   margin-left: 10px;
+}
+
+div.article_text table.codehilitetable {
+  margin-bottom: 16px;
 }
 
 div.article_text dl {
