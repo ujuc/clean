@@ -7,62 +7,68 @@ body {
 
 code, tt {
   font-family: Inconsolata, monospace;
-  font-size: 14px;
+  font-size: .95rem;
   color: rgba(195, 35, 42, 0.83);
   background: rgba(245, 100, 57, 0.33);
-  padding: 3px;
-  border-radius: 5px;
+  padding: 0 .2rem 0 .2rem;
+  border-radius: 2px;
 }
 
-div.codehilite pre {
-  font-family: Inconsolata, monospace;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 0;
+.codehilitetable {
+  font-family: "Inconsolata", monospace;
+  padding: .8rem;
+  border-left: solid 3px #FF8000;
+  border-radius: 2px;
 }
 
 div.linenodiv pre {
-  font-family: Inconsolata, monospace;
-  pendding: 10px;
+  font-family: "Inconsolata", monospace;
+  margin: 0;
+}
+
+div.codehilite pre {
+  font-family: "Inconsolata", monospace;
   margin: 0;
 }
 
 pre.code {
-  font-family: Inconsolata, monospace;
-  padding: 10px;
-  border-radius: 5px;
+  font-family: "Inconsolata", monospace;
+  padding: .9rem;
+  border-radius: 2px;
 }
 
 div.article_text p {
-  margin-left: 10px;
+  margin-left: .9rem;
 }
 
 td, th {
-  padding: 10px;
+  padding: .6rem;
 }
 
 div.article_text table {
   margin-bottom: 5px;
   background: rgba(0, 0, 0, 0.03);
-  margin-left: 10px;
+  margin-left: .6rem;
 }
 
 div.article_text table.codehilitetable {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 div.article_text dl {
-  margin-left: 10px;
+  margin-left: .6rem;
   margin-bottom: 0;
 }
+
 div.article_text dl dt {
-  font-family: Inconsolata, sans-serif;
-  font-size: 16px;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1rem;
 }
+
 div.article_text dl dd {
-  font-family: NotoSansKR, sans-serif;
-  font-size: 14px;
-  margin-left: 15px;
+  font-family: "NotoSansKR", sans-serif;
+  font-size: .9rem;
+  margin-left: .9rem;
 }
 
 img {
@@ -70,12 +76,12 @@ img {
 }
 
 blockquote {
-  font-size: .9em;
+  font-size: .9rem;
   color: #649098;
 }
 
 footer p {
-  font-size: .8em;
+  font-size: .8rem;
   color: #93a1a1;
   text-align: right;
 }
@@ -84,14 +90,15 @@ table {
   border: 1px;
 }
 
-
 dl#archive {
   margin-bottom: 0;
 }
+
 dl#archive > dt {
   font-family: Inconsolata, sans-serif;
   font-size: 16px;
 }
+
 dl#archive > dd {
   font-family: NotoSansKR, sans-serif;
   font-size: 14px;
@@ -99,14 +106,14 @@ dl#archive > dd {
 }
 
 article div.gist{
-  line-height: .875em;
+  line-height: .875rem;
 }
 
 /* class */
 
 .toc {
   font-family: NanumCoding, monospace;
-  font-size: .9em;
+  font-size: .9rem;
 }
 
 .pagination {
@@ -133,3 +140,4 @@ article div.gist{
 #site_article {
   margin-top: 20px;
 }
+
