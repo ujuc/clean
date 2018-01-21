@@ -54,6 +54,10 @@
             <span><a href="{{ link }}"><i class="fa {{ fa }}"></i> </a></span>
           {% endfor %}
         </div>
+      <div class="row">
+        {% for name, link, fa in SOCIAL %}
+          <span id="social"><a href="{{ link }}"><i class="fa {{ fa }}"></i> </a></span>
+        {% endfor %}
       </div>
     </div>
 
