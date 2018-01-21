@@ -1,12 +1,12 @@
 body {
-  font-family: NotoSansKR, sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
 code, tt {
-  font-family: Inconsolata, monospace;
+  font-family: monospace;
   font-size: .95rem;
   color: rgba(195, 35, 42, 0.83);
   background: rgba(245, 100, 57, 0.33);
@@ -15,24 +15,24 @@ code, tt {
 }
 
 .codehilitetable {
-  font-family: "Inconsolata", monospace;
+  font-family: monospace;
   padding: .8rem;
   border-left: solid 3px #FF8000;
   border-radius: 2px;
 }
 
 div.linenodiv pre {
-  font-family: "Inconsolata", monospace;
+  font-family: monospace;
   margin: 0;
 }
 
-div.codehilite pre {
-  font-family: "Inconsolata", monospace;
-  margin: 0;
+div.codehilite > pre {
+  margin: 10px;
+  padding: 1em;
 }
 
 pre.code {
-  font-family: "Inconsolata", monospace;
+  font-family: monospace;
   padding: .9rem;
   border-radius: 2px;
 }
@@ -61,12 +61,12 @@ div.article_text dl {
 }
 
 div.article_text dl dt {
-  font-family: "Inconsolata", sans-serif;
+  font-family: sans-serif;
   font-size: 1rem;
 }
 
 div.article_text dl dd {
-  font-family: "NotoSansKR", sans-serif;
+  font-family: sans-serif;
   font-size: .9rem;
   margin-left: .9rem;
 }
@@ -95,12 +95,12 @@ dl#archive {
 }
 
 dl#archive > dt {
-  font-family: Inconsolata, sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
 }
 
 dl#archive > dd {
-  font-family: NotoSansKR, sans-serif;
+  font-family: sans-serif;
   font-size: 14px;
   margin-left: 15px;
 }
@@ -112,7 +112,7 @@ article div.gist{
 /* class */
 
 .toc {
-  font-family: NanumCoding, monospace;
+  font-family: monospace;
   font-size: .9rem;
 }
 
