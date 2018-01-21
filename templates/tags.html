@@ -1,18 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}
-  | Tags
-{% endblock %}
-
 {% block content %}
   <div class="col-xs-offset-1 col-md-offset-1 col-xs-10 col-md-10">
-    <div class="row">
-      {% for tag, articles in tags|sort %}
-        <p>
-          <i class="fa fa-tag"></i>
-          <a href="{{ STIEURL }}/{{ tag.url }}">{{ tag }}</a> / <i class="fa fa-files-o"></i> {{ articles|count }}
-        </p>
-      {% endfor %}
-    </div>
+    {% for tag, articles in tags|sort %}
+      <p>
+        <i class="fa fa-tag"></i>
+        <a href="{{ STIEURL }}/{{ tag.url }}">{{ tag }}</a> / <i class="fa fa-files-o"></i> {{ articles|count }}
+      </p>
+    {% endfor %}
   </div>
 {% endblock %}
