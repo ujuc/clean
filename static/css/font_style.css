@@ -36,10 +36,10 @@
 
 @font-face {
   font-family: Inconsolata, monospace;
-  src: url(https://fonts.googleapis.com/css?family=Inconsolata);
+  src: url('https://fonts.googleapis.com/css?family=Inconsolata');
 }
 
 @font-face {
   font-family: NanumCoding, monospace;
-  src: url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+  src: url('http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css');
 }
