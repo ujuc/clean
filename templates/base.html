@@ -10,7 +10,7 @@
         {% for name, link, fa in MENUITEMS %}
           <li class="nav-item">
             <a class="nav-link" href="{{ link }}">
-              <i class="fa {{ fa }}"></i> <span class="hidden-xs">{{ name }}</span>
+              <i class="fas {{ fa }}"></i> <span class="hidden-xs">{{ name }}</span>
             </a>
           </li>
         {% endfor %}
@@ -19,7 +19,7 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Pages</a>
             <div class="dropdown-menu">
               {% for name, link in LINKS %}
-                <a class="dropdown-item" href="{{ link }}"><i class="fa fa-laptop"></i> {{ name }}</a>
+                <a class="dropdown-item" href="{{ link }}"><i class="fas fa-laptop"></i> {{ name }}</a>
               {% endfor %}
             </div>
           </li>
@@ -52,7 +52,7 @@
       </div>
       <div class="row">
         {% for name, link, fa in SOCIAL %}
-          <span id="social"><a href="{{ link }}"><i class="fa {{ fa }}"></i> </a></span>
+          <span id="social"><a href="{{ link }}"><i class="fab {{ fa }}"></i> </a></span>
         {% endfor %}
       </div>
     </div>
