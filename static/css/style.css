@@ -8,8 +8,8 @@ body {
 code, tt {
   font-family: monospace;
   font-size: .95rem;
-  color: rgba(195, 35, 42, 0.83);
-  background: rgba(245, 100, 57, 0.33);
+  color: rgba(29, 97, 199, 0.83);
+  background: rgba(255, 235, 97, 0.33);
   padding: 0 .2rem 0 .2rem;
   border-radius: 2px;
 }
