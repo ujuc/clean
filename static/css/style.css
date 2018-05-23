@@ -47,7 +47,7 @@ td, th {
 
 div.article_text table {
   margin-bottom: 5px;
-  background: rgba(0, 0, 0, 0.03);
+  background: #ebecee;
   margin-left: .6rem;
 }
 
@@ -87,7 +87,12 @@ footer p {
 }
 
 table {
-  border: 1px;
+  border: 1px solid #5a5f6a;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  border: 1px solid #5a5f6a;
 }
 
 dl#archive {
