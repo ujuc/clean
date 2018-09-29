@@ -80,12 +80,6 @@ blockquote {
   color: #649098;
 }
 
-footer p {
-  font-size: .8rem;
-  color: #93a1a1;
-  text-align: right;
-}
-
 table {
   border: 1px solid #5a5f6a;
   margin-bottom: 1rem;
@@ -136,6 +130,12 @@ article div.gist{
   font-weight: 700;
   text-align: center;
   white-space: nowrap;
+}
+
+#site_footer {
+  font-size: .8rem;
+  color: #93a1a1;
+  text-align: right;
 }
 
 #site_title span a {
