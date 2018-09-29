@@ -17,7 +17,7 @@
     {% else %}
       <li class="align-middle"><a rel="next"><i class="fa fa-times"></i> Next</a></li>
     {% endif %}
-    <a class="align-middle" style="margin: 0 0.2rem 0 0.2rem"><i class="fas fa-sun" style="color:orangered"></i></a>
+    <a class="align-middle" style="margin: 0 .5rem 0 .5rem"><i class="fas fa-sun" style="color:orangered"></i></a>
     {% if articles_page.has_next() %}
       <li class="align-middle">
         <a href="{{ STIEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">
