@@ -14,13 +14,6 @@ code, tt {
   border-radius: 2px;
 }
 
-.codehilitetable {
-  font-family: monospace;
-  padding: .8rem;
-  border-left: solid 3px #FF8000;
-  border-radius: 2px;
-}
-
 div.linenodiv pre {
   font-family: monospace;
   margin: 0;
@@ -106,6 +99,12 @@ article div.gist{
   white-space: nowrap;
 }
 
+.codehilitetable {
+  font-family: monospace;
+  padding: .8rem;
+  border-left: solid 3px #FF8000;
+  border-radius: 2px;
+}
 
 .fa-ellipsis-v {
   margin: 0 .5rem 0 .5rem;
