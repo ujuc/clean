@@ -1,53 +1,37 @@
 {% extends "base.html" %}
 
-{% block head %}
+{% block article_head %}
   <meta name="keywords" content="{{ article.tags|join(', ') }}">
 {% endblock %}
 
 {% block title %}
-  | {{ article.title }}
+  {{ article.title }}
 {% endblock %}
 
 {% block content %}
-  <div class="col-xs-offset-1 col-md-offset-1 col-xs-10 col-md-10">
-    <div class="row article_title">
-      <h1><a href="{{ SITEURL }}/{{ article.url }}" class="h1">{{ article.title }}</a></h1>
-    </div>
-    <div class="row">
-      <p><i class="fas fa-poo"></i></p>
-    </div>
-    <div class="row article">
-      <div class="article_text">
-        {{ article.content }}
-      </div>
-    </div>
-      <div class="row">
-        <p><i class="far fa-hand-spock"></i></p>
-      </div>
-    <div class="row article_meta">
-      <div>
-        <p>
+  <div class="row">
+    <div class="container">
+      <div class="article">
+        <div class="article_title"><h1>{{ article.title }}</h1></div>
+        <div id="division"><i class="fas fa-poo" style></i></div>
+        <div class="article_text">{{ article.content }}</div>
+        <div id="division"><i class="far fa-hand-spock"></i></div>
+        <div class="article_meta">
           <i class="far fa-calendar-plus"></i> {{ article.locale_date }}
-        <i class="fas fa-ellipsis-v"> </i>
+          <i class="fas fa-ellipsis-v"></i>
           <i class="far fa-folder-open"></i> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-        <i class="fas fa-ellipsis-v"> </i>
+          <i class="fas fa-ellipsis-v"></i>
           <i class="fas fa-tags">
             {% for tag in article.tags %}
               <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
-              {% if not loop.last %}, {% endif %}
             {% endfor %}
           </i>
-        </p>
+        </div>
+        {% if DISQUS_SITENAME %}
+          <div class="article_comments">{% include "_include/disqus.html" %}</div>
+        {% endif %}
+        <div style="text-align: center">🎗</div>
       </div>
     </div>
-
-    {% if DISQUS_SITENAME %}
-      <div class="article_comments">
-        {% include "_include/disqus.html" %}
-      </div>
-      <div>
-        <p style="text-align: center">🎗️</p>
-      </div>
-    {% endif %}
   </div>
 {% endblock %}

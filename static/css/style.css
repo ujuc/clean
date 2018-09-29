@@ -37,14 +37,6 @@ pre.code {
   border-radius: 2px;
 }
 
-div.article_text p {
-  margin-left: .9rem;
-}
-
-td, th {
-  padding: .6rem;
-}
-
 div.article_text table {
   margin-bottom: 5px;
   background: #ebecee;
@@ -80,13 +72,10 @@ blockquote {
   color: #649098;
 }
 
-table {
-  border: 1px solid #5a5f6a;
-  margin-bottom: 1rem;
-}
-
-th, td {
-  border: 1px solid #5a5f6a;
+table, th, td {
+  border: .1rem solid lightgray;
+  background: white;
+  padding: .3rem;
 }
 
 article div.gist{
@@ -117,6 +106,13 @@ article div.gist{
   white-space: nowrap;
 }
 
+
+.fa-ellipsis-v {
+  margin: 0 .5rem 0 .5rem;
+}
+
+/* id */
+
 #site_footer {
   font-size: .8rem;
   color: #93a1a1;
@@ -134,4 +130,9 @@ article div.gist{
 #social {
   font-size: 1rem;
   margin-right: 0.2rem;
+}
+
+#division {
+  color: lightgray;
+  text-align: center;
 }
