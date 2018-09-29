@@ -1,23 +1,32 @@
 {% extends "base.html" %}
 
+{% block article_head %}
+  <meta name="keywords" content="{{ page.tags|join(', ') }}">
+{% endblock %}
+
 {% block title %}
-  | {{ page.title }}
+  {{ page.title }}
 {% endblock %}
 
 {% block content %}
-  <div class="col-xs-offset-1 col-md-offset-1 col-xs-10 col-md-10">
-    <div class="row article_title">
-      <h3><a href="{{ SITEURL }}/{{ page.url }}" class="h3">{{ page.title }}</h3>
-    </div>
-    <div class="row article">
-      <p>...</p>
-      <div class="article_text">
-        {{ page.content }}
+  <div class="row">
+    <div class="container">
+      <div class="article">
+        <div class="article_title"><h1>{{ page.title }}</h1></div>
+        <div id="division"><i class="fas fa-poo" style></i></div>
+        <div class="article_text">{{ page.content }}</div>
+        <div id="division"><i class="far fa-hand-spock"></i></div>
+        <div class="article_meta">
+          <i class="far fa-calendar-plus"></i> {{ article.locale_date }}
+          <i class="fas fa-ellipsis-v"></i>
+          <i class="fas fa-tags">
+            {% for tag in article.tags %}
+              <a href="{{ SITEURL }}/{{ tag.url }}" class="article_tag">{{ tag }}</a>
+            {% endfor %}
+          </i>
+        </div>
+        <div style="text-align: center">🎗</div>
       </div>
-      <p>...</p>
-    </div>
-    <div class="row article_meta">
-      <p><i class="far fa-calendar-plus"></i> {{ article.locale_date }}
     </div>
   </div>
 {% endblock %}
