@@ -89,21 +89,6 @@ th, td {
   border: 1px solid #5a5f6a;
 }
 
-dl#archive {
-  margin-bottom: 0;
-}
-
-dl#archive > dt {
-  font-family: sans-serif;
-  font-size: 16px;
-}
-
-dl#archive > dd {
-  font-family: sans-serif;
-  font-size: 14px;
-  margin-left: 15px;
-}
-
 article div.gist{
   line-height: .875rem;
 }

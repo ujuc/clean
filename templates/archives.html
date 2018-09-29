@@ -1,14 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="col-xs-offset-1 col-md-offset-1 col-xs-10 col-md-10">
-    <div class="row">
-      <dl id="archive">
-        {% for article in dates %}
-          <dt>{{ article.locale_date }}</dt>
-          <dd><i class="fas fa-cloud-upload-alt"></i> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-        {% endfor %}
-      </dl>
+  <div class="row">
+    <div class="container">
+      {% for article in dates %}
+        <p><i class="fas fa-cloud-upload-alt"></i> <strong>[{{ article.locale_date }}]</strong> <a href="{{ SITEURL }}//{{ article.url }}">{{ article.title }}</a></p>
+      {% endfor %}
     </div>
   </div>
 {% endblock %}
