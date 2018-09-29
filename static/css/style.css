@@ -1,12 +1,5 @@
-body {
-  font-family: sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-
 code, tt {
-  font-family: monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: .95rem;
   color: rgba(29, 97, 199, 0.83);
   background: rgba(255, 235, 97, 0.33);
@@ -15,7 +8,7 @@ code, tt {
 }
 
 div.linenodiv pre {
-  font-family: monospace;
+  font-family: 'Roboto Mono', monospace;
   margin: 0;
 }
 
@@ -25,15 +18,9 @@ div.codehilite > pre {
 }
 
 pre.code {
-  font-family: monospace;
+  font-family: 'Roboto Mono', monospace;
   padding: .9rem;
   border-radius: 2px;
-}
-
-div.article_text table {
-  margin-bottom: 5px;
-  background: #ebecee;
-  margin-left: .6rem;
 }
 
 div.article_text table.codehilitetable {
@@ -77,8 +64,16 @@ article div.gist{
 
 /* class */
 
+.article_title, .nav, .pagination {
+  font-family: 'Jua', sans-serif;
+}
+
+.article_text, .article_meta, .article_tag {
+  font-family: 'Noto Serif KR', sans-serif;
+}
+
 .toc {
-  font-family: monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: .9rem;
 }
 
@@ -100,7 +95,7 @@ article div.gist{
 }
 
 .codehilitetable {
-  font-family: monospace;
+  font-family: 'Roboto Mono', monospace;
   padding: .8rem;
   border-left: solid 3px #FF8000;
   border-radius: 2px;
@@ -116,6 +111,10 @@ article div.gist{
   font-size: .8rem;
   color: #93a1a1;
   text-align: right;
+}
+
+#site_title {
+  font-family: 'Jua', sans-serif;
 }
 
 #site_title span a {

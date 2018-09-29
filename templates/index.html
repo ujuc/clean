@@ -4,9 +4,8 @@
   {% for article in articles_page.object_list %}
     <article class="row">
       <div class="container">
-        <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-        <p>{{ article.summary }}</p>
-        <p><i class="far fa-calendar-plus"></i> {{ article.locale_date }}</p>
+        <h3 class="article_title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+        <div class="article_text">{{ article.summary }}</div>
       </div>
     </article>
     {% if not loop.last %}
