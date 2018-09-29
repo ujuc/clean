@@ -1,21 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="row">
-    <div class="col-xs-offset-1 col-md-offset-1 col-xs-10 col-md-10">
-      {% for article in articles_page.object_list %}
-        <article>
-          <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-          <p>{{ article.summary }}</p>
-          <p><i class="far fa-calendar-plus"></i> {{ article.locale_date }}</p>
-        </article>
-        {% if not loop.last %}
-          <hr/>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
+  {% for article in articles_page.object_list %}
+    <article class="row">
+      <div class="container">
+        <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+        <p>{{ article.summary }}</p>
+        <p><i class="far fa-calendar-plus"></i> {{ article.locale_date }}</p>
+      </div>
+    </article>
+    {% if not loop.last %}
+      <hr/>
+    {% endif %}
+  {% endfor %}
 {% endblock %}
 
 {% block foot %}
