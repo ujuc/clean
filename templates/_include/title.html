@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="container">
+    <hr />
+    <h3><a href="{{ SITEURL }}" class="h3">{{ SITENAME }}</a></h3>
+    <p>{{ SITESUBTITLE }}</p>
+    {% for name, link, fa in SOCIAL %}
+    <span id="social-{{ name|lower }}"><a href="{{ link }}"><i class="fab {{ fa }}"></i></a></span>
+    {% endfor %}
+  </div>
+</div>

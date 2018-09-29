@@ -26,20 +26,7 @@
 
   <!-- Title -->
   <div id="site_title" class="container">
-    <div class="col-xs-offset-1 col-md-offset-1 col-xs-10 col-md-10">
-      <div class="row">
-        <hr />
-        <h3><a href="{{ SITEURL }}" class="h3">{{ SITENAME }}</a></h3>
-      </div>
-      <div class="row">
-        <p>{{ SITESUBTITLE }}</p>
-      </div>
-      <div class="row">
-        {% for name, link, fa in SOCIAL %}
-          <span id="social"><a href="{{ link }}"><i class="fab {{ fa }}"></i> </a></span>
-        {% endfor %}
-      </div>
-    </div>
+    {% include "_include/title.html" %}
   </div>
 
   <div id="site_footer" class="container">
