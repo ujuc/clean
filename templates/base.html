@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 
-{% include "_include/header.html" %}
+  <head>
+    {% include "_include/head.html" %}
+
+    <!-- Article head -->
+    {% block article_head %}
+    {% endblock %}
+
+    <!-- Title -->
+    <title>
+    {{ SITENAME }} - {% block title %}{% endblock %}
+    </title>
+
+    {% include "_include/ga.html" %}
+    {% include "_include/gads.html" %}
+  </head>
 
   <body>
   <header>
@@ -10,10 +24,8 @@
   </header>
 
   <div id="site_article" class="container">
-    <article>
-      {% block content %}
-      {% endblock %}
-    </article>
+    {% block content %}
+    {% endblock %}
   </div>
 
   <!-- body foot -->
@@ -34,6 +46,7 @@
     {% include "_include/footer.html" %}
   </div>
 
+  <!-- Javascript -->
   {% include "_include/js.html" %}
 
   </body>
