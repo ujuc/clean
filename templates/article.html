@@ -27,6 +27,15 @@
             {% endfor %}
           </i>
         </div>
+        <div id="utterances">
+          <script src="https://utteranc.es/client.js"
+        repo="ujuc/ujuc.github.io"
+        issue-term="url"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+        </div>
         {% if DISQUS_SITENAME %}
           <div class="article_comments">{% include "_include/disqus.html" %}</div>
         {% endif %}
