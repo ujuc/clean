@@ -62,10 +62,41 @@ article div.gist{
   line-height: .875rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
 /* class */
 
 .article_title, .nav, .pagination {
   font-family: 'Jua', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .article_text, .article_meta, .article_tag {
