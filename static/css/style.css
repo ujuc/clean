@@ -95,8 +95,6 @@ h6 {
 
 .article_title, .nav, .pagination {
   font-family: 'Jua', sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
 }
 
 .article_text, .article_meta, .article_tag {
