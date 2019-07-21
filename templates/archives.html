@@ -2,93 +2,20 @@
 
 {% block content %}
   <div class="row">
-    {# 2019 #}
+    {% for year in range(2019, 2011, -1) %}
     <div class="container">
-      <div class="article_title"><i class="fab fa-algolia"></i> 2019 </div>
+      <div class="archive_title">
+        <i class="fab fa-algolia"></i> {{ year }}
+      </div>
       {% for article in articles %}
-        {% if article.date.strftime('%Y') == "2019" %}
-          <div class="article_text" style="padding-left: 1em;">
-            <i class="fas fa-cloud-upload-alt"></i> <a href="{{ SITEURL }}//{{ article.url }}">{{ article.title }}</a>
+        {% set article_year = article.date.strftime("%Y")|int %}
+        {% if article_year == year %}
+          <div class="archive_title" style="padding-left: 1em;">
+            <i class="fas fa-cloud-upload-alt"></i> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
           </div>
         {% endif %}
       {% endfor %}
     </div>
-    {# 2018 #}
-    <div class="container">
-      <div class="article_title"><i class="fab fa-algolia"></i> 2018 </div>
-      {% for article in articles %}
-        {% if article.date.strftime('%Y') == "2018" %}
-          <div class="article_text" style="padding-left: 1em;">
-            <i class="fas fa-cloud-upload-alt"></i> <a href="{{ SITEURL }}//{{ article.url }}">{{ article.title }}</a>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    {# 2017 #}
-    <div class="container">
-      <div class="article_title"><i class="fab fa-algolia"></i> 2017 </div>
-      {% for article in articles %}
-        {% if article.date.strftime('%Y') == "2017" %}
-          <div class="article_text">
-            <i class="fas fa-cloud-upload-alt" style="padding-left: 1em;"></i> <a href="{{ SITEURL }}//{{ article.url }}">{{ article.title }}</a>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    {# 2016 #}
-    <div class="container">
-      <div class="article_title"><i class="fab fa-algolia"></i> 2016 </div>
-      {% for article in articles %}
-        {% if article.date.strftime('%Y') == "2016" %}
-          <div class="article_text" style="padding-left: 1em;">
-            <i class="fas fa-cloud-upload-alt"></i> <a href="{{ SITEURL }}//{{ article.url }}">{{ article.title }}</a>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    {# 2015 #}
-    <div class="container">
-      <div class="article_title"><i class="fab fa-algolia"></i> 2015 </div>
-      {% for article in articles %}
-        {% if article.date.strftime('%Y') == "2015" %}
-          <div class="article_text" style="padding-left: 1em;">
-            <i class="fas fa-cloud-upload-alt"></i> <a href="{{ SITEURL }}//{{ article.url }}">{{ article.title }}</a>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    {# 2014 #}
-    <div class="container">
-      <div class="article_title"><i class="fab fa-algolia"></i> 2014 </div>
-      {% for article in articles %}
-        {% if article.date.strftime('%Y') == "2014" %}
-          <div class="article_text" style="padding-left: 1em;">
-            <i class="fas fa-cloud-upload-alt"></i> <a href="{{ SITEURL }}//{{ article.url }}">{{ article.title }}</a>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    {# 2013 #}
-    <div class="container">
-      <div class="article_title"><i class="fab fa-algolia"></i> 2013 </div>
-      {% for article in articles %}
-        {% if article.date.strftime('%Y') == "2013" %}
-          <div class="article_text" style="padding-left: 1em;">
-            <i class="fas fa-cloud-upload-alt"></i> <a href="{{ SITEURL }}//{{ article.url }}">{{ article.title }}</a>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    {# 2012 #}
-    <div class="container">
-      <div class="article_title"><i class="fab fa-algolia"></i> 2012 </div>
-      {% for article in articles %}
-        {% if article.date.strftime('%Y') == "2012" %}
-          <div class="article_text" style="padding-left: 1em;">
-            <i class="fas fa-cloud-upload-alt"></i> <a href="{{ SITEURL }}//{{ article.url }}">{{ article.title }}</a>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
+    {% endfor %}
   </div>
 {% endblock %}

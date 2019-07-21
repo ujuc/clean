@@ -93,17 +93,24 @@ h6 {
 
 /* class */
 
-.article_title, .nav, .pagination {
+.article_title, .nav, .pagination, .archive_title, .article_tag, .article_meta, .category_title {
   font-family: 'Sunflower', sans-serif;
 }
 
-.article_text, .article_meta, .article_tag {
+.article_text {
   font-family: 'Noto Serif KR', sans-serif;
 }
 
 .toc {
   font-family: 'IBM Plex Mono', monospace;
   font-size: .9rem;
+}
+
+.codehilitetable {
+    font-family: 'IBM Plex Mono', monospace;
+    padding: .8rem;
+    border-left: solid 3px #FF8000;
+    border-radius: 2px;
 }
 
 .pagination {
@@ -121,13 +128,6 @@ h6 {
   font-weight: 700;
   text-align: center;
   white-space: nowrap;
-}
-
-.codehilitetable {
-  font-family: 'IBM Plex Mono', monospace;
-  padding: .8rem;
-  border-left: solid 3px #FF8000;
-  border-radius: 2px;
 }
 
 .fa-ellipsis-v {
