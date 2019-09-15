@@ -160,6 +160,47 @@ h6 {
 }
 
 #division {
-  color: lightgray;
   text-align: center;
+}
+
+/* font awesome */
+i.fa-calendar-plus {
+  color: orangered;
+}
+
+i.fa-ellipsis-v {
+  color: forestgreen;
+  font-size: .3rem;
+}
+
+i.fa-tag, i.fa-tags {
+  color: lightseagreen;
+}
+
+i.fa-inbox {
+  color: navy;
+}
+
+i.fa-archive {
+  color: yellowgreen;
+}
+
+i.fa-folder-open {
+  color: olivedrab;
+}
+
+i.fa-cloud-upload-alt {
+  color: skyblue;
+}
+
+i.fa-keyboard {
+  color: darkslategray;
+}
+
+i.fa-poo {
+  color: peru;
+}
+
+i.fa-hand-spock {
+  color: darkblue;
 }
