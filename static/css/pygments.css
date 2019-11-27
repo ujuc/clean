@@ -1,299 +1,319 @@
 /**
-  http://jwarby.github.io/jekyll-pygments-themes/languages/python.html
-  zenburn
+  https://github.com/daveyarwood/gruvbox-pygments
+  gruvbox
  */
 div.codehilite > pre {
-  background-color: #3f3f3f;
-  color: #fdce93;
-  font-family: 'IBM Plex Mono', monospace;
+  background-color: #282828;
+  color: #ebdbb2;
+  font-family: 'Fira Mono', monospace;
   font-size: 14px;
   margin-left: 10px;
 }
 
 .code {
-  background-color: #3f3f3f;
-  color: #fdce93;
-  font-family: 'IBM Plex Mono', monospace;
+  background-color: #282828;
+  color: #ebdbb2;
+  font-family: 'Fira Mono', monospace;
   font-size: 14px;
 }
 
 /* Comment */
 .c {
-  color: #7f9f7f;
+  color: #ffffcc;
+  font-style: italic;
 }
 
 /* Error */
 .err {
-  color: #e37170;
-  background-color: #3d3535;
+  color: #ebdbb2;
+}
+
+/* Escape */
+.esc {
+  color: #ebdbb2;
 }
 
 /* Generic */
 .g {
-  color: #7f9f7f;
+  color: #ebdbb2;
 }
 
 /* Keyword */
 .k {
-  color: #f0dfaf;
+  color: #fe8019;
 }
 
 /* Literal */
 .l {
-  color: #ccc;
+  color: #ebdbb2;
 }
 
 /* Name */
 .n {
-  color: #93a1a1;
+  color: #ebdbb2;
 }
 
 /* Operator */
 .o {
-  color: #f0efd0;
+  color: #fe8019;
 }
 
 /* Other */
 .x {
-  color: #ccc;
+  color: #ebdbb2;
 }
 
 /* Punctuation */
 .p {
-  color: #41706f;
+  color: #ebdbb2;
+}
+
+/* Comment.Hashbang */
+.ch {
+  color: #928374;
+  font-style: italic;
 }
 
 /* Comment.Multiline */
 .cm {
-  color: #7f9f7f;
+  color: #928374;
+  font-style: italic;
 }
 
 /* Comment.Preproc */
 .cp {
-  color: #7f9f7f;
+  color: #8ec07c;
 }
 
 /* Comment.Single */
 .c1 {
-  color: #7f9f7f;
+  color: #928374;
+  font-style: italic;
 }
 
 /* Comment.Special */
 .cs {
-  color: #cd0000;
-  font-weight: 700;
+  color: #928374;
+  font-style: italic;
 }
 
 /* Generic.Deleted */
 .gd {
-  color: #cd0000;
+  color: #282828;
 }
 
 /* Generic.Emph */
 .ge {
-  color: #ccc;
-  font-style: italic;
+  color: #83a598;
+  text-decoration: underline;
 }
 
 /* Generic.Error */
 .gr {
-  color: #f00;
+  color: #ebdbb2;
+  font-weight: bold;
+  background-color: #fb4934;
 }
 
 /* Generic.Heading */
 .gh {
-  color: #dcdccc;
-  font-weight: 700;
+  color: #b8bb26;
+  font-weight: bold;
 }
 
 /* Generic.Inserted */
 .gi {
-  color: #00cd00;
+  color: #282828;
+  background-color: #b8bb26;
 }
 
 /* Generic.Output */
 .go {
-  color: gray;
+  color: 504945;
 }
 
 /* Generic.Prompt */
 .gp {
   color: #dcdccc;
-  font-weight: 700;
 }
 
 /* Generic.Strong */
 .gs {
-  color: #ccc;
-  font-weight: 700;
+  color: #ebdbb2;
 }
 
 /* Generic.Subheading */
 .gu {
-  color: purple;
-  font-weight: 700;
+  color: b8bb26;
+  font-weight: bold;
 }
 
 /* Generic.Traceback */
 .gt {
-  color: #0040D0;
+  color: #ebdbb2;
+  font-weight: bold;
+  background-color: #fb4934;
 }
 
 /* Keyword.Constant */
 .kc {
-  color: #dca3a3;
+  color: #fe8019;
 }
 
 /* Keyword.Declaration */
 .kd {
-  color: #ffff86;
+  color: #fe8019;
 }
 
 /* Keyword.Namespace */
 .kn {
-  color: #dfaf8f;
-  font-weight: 700;
+  color: #fe8019;
 }
 
 /* Keyword.Pseudo */
 .kp {
-  color: #cdcf99;
+  color: #fe8019;
 }
 
 /* Keyword.Reserved */
 .kr {
-  color: #cdcd00;
+  color: #fe8019;
 }
 
 /* Keyword.Type */
 .kt {
-  color: #00cd00;
+  color: #fabd2f;
 }
 
 /* Literal.Date */
 .ld {
-  color: #cc9393;
+  color: #ebdbb2;
 }
 
 /* Literal.Number */
 .m {
-  color: #8cd0d3;
+  color: #d3869b;
 }
 
 /* Literal.String */
 .s {
-  color: #cc9393;
+  color: #b8bb26;
 }
 
 /* Name.Attribute */
 .na {
-  color: #9ac39f;
+  color: #b8bb26;
+  font-weight: bold;
 }
 
 /* Name.Builtin */
 .nb {
-  color: #efef9f;
+  color: #fabd2f;
 }
 
 /* Name.Class */
 .nc {
-  color: #efef8f;
+  color: #ebdbb2;
 }
 
 /* Name.Constant */
 .no {
-  color: #ccc;
+  color: #d3869b;
 }
 
 /* Name.Decorator */
 .nd {
-  color: #ccc;
+  color: #ebdbb2;
 }
 
 /* Name.Entity */
 .ni {
-  color: #c28182;
+  color: #fabd2f;
 }
 
 /* Name.Exception */
 .ne {
-  color: #c3bf9f;
-  font-weight: 700;
+  color: #fb4934;
 }
 
 /* Name.Function */
 .nf {
-  color: #efef8f;
+  color: #fabd2f;
 }
 
 /* Name.Label */
 .nl {
-  color: #ccc;
+  color: #fb4934;
 }
 
 /* Name.Namespace */
 .nn {
-  color: #8fbede;
+  color: #ebdbb2;
 }
 
 /* Name.Other */
 .nx {
-  color: #ccc;
+  color: #ebdbb2;
 }
 
 /* Name.Property */
 .py {
-  color: #ccc;
+  color: #ebdbb2;
 }
 
 /* Name.Tag */
 .nt {
-  color: #9ac39f;
+  color: #fb4934;
 }
 
 /* Name.Variable */
 .nv {
-  color: #dcdccc;
+  color: #ebdbb2;
 }
 
 /* Operator.Word */
 .ow {
-  color: #f0efd0;
+  color: #fe8019;
 }
 
 /* Text.Whitespace */
 .w {
-  color: #ccc;
+  color: #ebdbb2;
+}
+
+/* Literal.Number.Bin */
+.mb {
+  color: #d3869b;
 }
 
 /* Literal.Number.Float */
 .mf {
-  color: #8cd0d3;
+  color: #d3869b;
 }
 
 /* Literal.Number.Hex */
 .mh {
-  color: #8cd0d3;
+  color: #d3869b;
 }
 
 /* Literal.Number.Integer */
 .mi {
-  color: #8cd0d3;
+  color: #d3869b;
 }
 
 /* Literal.Number.Oct */
 .mo {
-  color: #8cd0d3;
+  color: #d3869b;
 }
 
 /* Literal.String.Backtick */
 .sb {
-  color: #cc9393;
+  color: #b8bb26;
 }
 
 /* Literal.String.Char */
 .sc {
-  color: #cc9393;
+  color: #b8bb26;
 }
 
 /* Literal.String.Doc */
@@ -308,60 +328,60 @@ div.codehilite > pre {
 
 /* Literal.String.Escape */
 .se {
-  color: #cc9393;
+  color: #b8bb26;
 }
 
 /* Literal.String.Heredoc */
 .sh {
-  color: #cc9393;
+  color: #b8bb26;
 }
 
 /* Literal.String.Interpol */
 .si {
-  color: #cc9393;
+  color: #b8bb26;
 }
 
 /* Literal.String.Other */
 .sx {
-  color: #cc9393;
+  color: #b8bb26;
 }
 
 /* Literal.String.Regex */
 .sr {
-  color: #cc9393;
+  color: #b8bb26;
 }
 
 /* Literal.String.Single */
 .s1 {
-  color: #cc9393;
+  color: #b8bb26;
 }
 
 /* Literal.String.Symbol */
 .ss {
-  color: #cc9393;
+  color: #83a598;
 }
 
 /* Name.Builtin.Pseudo */
 .bp {
-  color: #efef8f;
+  color: #fabd2f;
 }
 
 /* Name.Variable.Class */
 .vc {
-  color: #efef8f;
+  color: #ebdbb2;
 }
 
 /* Name.Variable.Global */
 .vg {
-  color: #dcdccc;
+  color: #ebdbb2;
 }
 
 /* Name.Variable.Instance */
 .vi {
-  color: #ffffc7;
+  color: #ebdbb2;
 }
 
 /* Literal.Number.Integer.Long */
 .il {
-  color: #8cd0d3;
+  color: #d3869b;
 }

@@ -1,14 +1,14 @@
 code, tt {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Fira Mono', monospace;
   font-size: .95rem;
-  color: rgba(29, 97, 199, 0.83);
-  background: rgba(255, 235, 97, 0.33);
+  color: #ebdbb2;
+  background: #282828;
   padding: 0 .2rem 0 .2rem;
   border-radius: 2px;
 }
 
 div.linenodiv pre {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Fira Mono', monospace;
   margin: 0;
 }
 
@@ -18,7 +18,7 @@ div.codehilite > pre {
 }
 
 pre.code {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Fira Mono', monospace;
   padding: .9rem;
   border-radius: 2px;
 }
@@ -98,16 +98,16 @@ h6 {
 }
 
 .article_text {
-  font-family: 'Song Myung', sans-serif;
+  font-family: 'Noto Serif KR', serif;
 }
 
 .toc {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Fira Mono', monospace;
   font-size: .9rem;
 }
 
 .codehilitetable {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Fira Mono', monospace;
     padding: .8rem;
     border-left: solid 3px #FF8000;
     border-radius: 2px;
