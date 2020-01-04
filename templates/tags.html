@@ -4,11 +4,23 @@
   <div class="row">
     <div class="container">
       {% for tag, articles in tags|sort %}
-        <div class="article_tag">
-          <i class="fas fa-tag"></i>
-          <a href="{{ STIEURL }}/{{ tag.url }}">{{ tag }}</a> / <i class="far fa-copy"></i> {{ articles|count }}
+        {% if loop.index == 1 %}
+        <div class="row">
+        {% endif %}
+          <div class="col article_tag">
+            <i class="fas fa-tag"></i> <a href="{{ STIEURL }}/{{ tag.url }}">{{ tag }}</a> - <i class="far fa-copy"></i> {{ articles|count }}
         </div>
+        {% if loop.index % 3 == 0 %}
+        </div>
+        <div class="row">
+        {% endif %}
+        {% if loop.last %}
+          {% for _ in range((loop.index % 3) - 1) %}
+            <div class="col article_tag"></div>
+          {% endfor %}
+        {% endif %}
       {% endfor %}
+      </div>
     </div>
   </div>
 {% endblock %}
