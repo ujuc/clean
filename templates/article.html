@@ -36,15 +36,17 @@
         {% endif %}
 
         <!-- Comment -->
+        {% if UTTERANCES_REPO %}
         <div id="utterances">
           <script src="https://utteranc.es/client.js"
-                  repo="ujuc/ujuc.github.io"
+                  repo="{{ UTTERANCES_REPO }}"
                   issue-term="url"
                   theme="github-light"
                   crossorigin="anonymous"
                   async>
           </script>
         </div>
+        {% endif %}
         {% if DISQUS_SITENAME %}
           <div class="article_comments">{% include "_include/disqus.html" %}</div>
         {% endif %}
