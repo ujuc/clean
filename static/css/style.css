@@ -64,7 +64,6 @@ article div.gist{
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  margin-top: 2rem;
 }
 
 h1 {
@@ -92,8 +91,13 @@ h6 {
 }
 
 /* class */
+.article_title {
+  font-family: 'Sunflower', sans-serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
 
-.article_title, .nav, .pagination, .archive_title, .article_tag, .article_meta, .category_title {
+.nav, .pagination, .archive_title, .article_tag, .article_meta, .category_title {
   font-family: 'Sunflower', sans-serif;
 }
 
@@ -130,10 +134,6 @@ h6 {
   white-space: nowrap;
 }
 
-.fa-ellipsis-v {
-  margin: 0 .5rem 0 .5rem;
-}
-
 /* id */
 
 #site_footer {
@@ -165,32 +165,29 @@ h6 {
 
 /* font awesome */
 i.fa-calendar-plus {
-  color: orangered;
+  color: black;
 }
 
 i.fa-ellipsis-v {
-  color: forestgreen;
-  font-size: .3rem;
+  color: black;
+  font-size: 1rem;
+  margin: 0 .5rem 0 .5rem;
 }
 
 i.fa-tag, i.fa-tags {
-  color: lightseagreen;
+  color: black;
 }
 
 i.fa-inbox {
-  color: navy;
+  color: black;
 }
 
 i.fa-archive {
-  color: yellowgreen;
+  color: black;
 }
 
 i.fa-folder-open {
-  color: olivedrab;
-}
-
-i.fa-cloud-upload-alt {
-  color: skyblue;
+  color: black;
 }
 
 i.fa-keyboard {
@@ -199,8 +196,10 @@ i.fa-keyboard {
 
 i.fa-poo {
   color: peru;
+  opacity: 30%;
 }
 
 i.fa-hand-spock {
   color: darkblue;
+  opacity: 30%;
 }

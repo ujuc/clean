@@ -129,7 +129,7 @@ div.codehilite > pre {
 
 /* Generic.Output */
 .go {
-  color: 504945;
+  color: #504945;
 }
 
 /* Generic.Prompt */
@@ -144,7 +144,7 @@ div.codehilite > pre {
 
 /* Generic.Subheading */
 .gu {
-  color: b8bb26;
+  color: #b8bb26;
   font-weight: bold;
 }
 
