@@ -7,7 +7,12 @@
         <div>
           <a href="{{ SITEURL }}/{{ article.url }}" class="article_title">{{ article.title }}</a>
         </div>
-        <div class="article_meta"><i class="far fa-calendar-plus"></i> {{ article.locale_date }}</div>
+        <div class="article_meta">
+          <i class="far fa-calendar-plus"></i> {{ article.locale_date }} / <i class="fas fa-level-up-alt"></i>
+          {% if article.local_modified != article.locale_date }}
+            {{ article.locale_modified }}
+          {% endif %}
+        </div>
         <div class="article_text">{{ article.summary }}</div>
       </div>
     </article>
