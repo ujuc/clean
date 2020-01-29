@@ -24,13 +24,13 @@
             {% endfor %}
           </i>
         </div>
-        <div id="division"><i class="fas fa-poo" style></i></div>
+        <div class="text-center"><i class="fas fa-poo" style></i></div>
         <div class="article_text">{{ article.content }}</div>
-        <div id="division"><i class="far fa-hand-spock"></i></div>
+        <div class="text-center"><i class="far fa-hand-spock"></i></div>
 
         <!-- Buy me a coffee -->
         {% if BMC_CODE %}
-        <div>
+        <div class="text-center">
           {% include "_include/buy_me_a_coffee.html" %}
         </div>
         {% endif %}
@@ -50,7 +50,7 @@
         {% if DISQUS_SITENAME %}
           <div class="article_comments">{% include "_include/disqus.html" %}</div>
         {% endif %}
-        <div style="text-align: center">🎗</div>
+        <div class="text-center">🎗</div>
       </div>
     </div>
   </div>

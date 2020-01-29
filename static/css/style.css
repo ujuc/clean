@@ -139,7 +139,6 @@ h6 {
 #site_footer {
   font-size: .8rem;
   color: #93a1a1;
-  text-align: right;
 }
 
 #site_title {
@@ -157,10 +156,6 @@ h6 {
 #social {
   font-size: 1rem;
   margin-right: 0.2rem;
-}
-
-#division {
-  text-align: center;
 }
 
 /* font awesome */
