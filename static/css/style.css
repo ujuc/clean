@@ -92,13 +92,13 @@ h6 {
 
 /* class */
 .article_title {
-  font-family: 'Sunflower', sans-serif;
+  font-family: 'Gugi', sans-serif;
   font-size: 1.75rem;
   font-weight: bold;
 }
 
 .nav, .pagination, .archive_title, .article_tag, .article_meta, .category_title {
-  font-family: 'Sunflower', sans-serif;
+  font-family: 'Gugi', sans-serif;
 }
 
 .article_text {
@@ -142,7 +142,7 @@ h6 {
 }
 
 #site_title {
-  font-family: 'Sunflower', sans-serif;
+  font-family: 'Gugi', sans-serif;
 }
 
 #site_title span a {
