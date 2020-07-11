@@ -4,30 +4,30 @@
       {% if articles_page.previous_page_number() == 1 %}
         <li class="align-middle">
           <a href="{{ SITEURL }}/{{ page_name }}.html">
-            <i class="fas fa-arrow-circle-left"></i> Next
+            <i class="fas fa-angle-double-left"></i> Next
           </a>
         </li>
       {% else %}
         <li class="align-middle">
           <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">
-            <i class="fas fa-arrow-circle-left"></i> Next
+            <i class="fas fa-angle-double-left"></i> Next
           </a>
         </li>
       {% endif %}
     {% else %}
-      <li class="align-middle"><a rel="next"><i class="fa fa-times"></i> Next</a></li>
+      <li class="align-middle"><a rel="next"><i class="fa fa-anchor"></i> Next</a></li>
     {% endif %}
     <a class="align-middle" style="margin: 0 .5rem 0 .5rem"><i class="fas fa-sun" style="color:orangered"></i></a>
     {% if articles_page.has_next() %}
       <li class="align-middle">
         <a href="{{ STIEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">
-          Prev <i class="fas fa-arrow-circle-right"></i>
+          Prev <i class="fas fa-angle-double-right"></i>
         </a>
       </li>
     {% else %}
       <li class="align-middle">
         <a rel="prev">
-          Prev <i class="fas fa-times"></i>
+          Prev <i class="fas fa-anchor"></i>
         </a>
       </li>
     {% endif %}
