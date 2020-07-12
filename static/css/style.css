@@ -7,6 +7,14 @@ code, tt {
   border-radius: 2px;
 }
 
+a > code {
+  color: #ebdbb2;
+}
+
+a, a:link, a:visited, a:hover {
+  color: #4335a4;
+}
+
 div.linenodiv pre {
   font-family: 'Fira Mono', monospace;
   margin: 0;
