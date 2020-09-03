@@ -1,5 +1,27 @@
+
+@font-face {
+  font-family: 'IBMPlexSansKR-Text';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RIDIBatang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dtp-FantasqueSansMono';
+  src: url("https://cdn.jsdelivr.net/npm/@typopro/dtp-fantasque-sans-mono@3/TypoPRO-FantasqueSansMono-Regular.ttf") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 code, tt {
-  font-family: 'Fira Mono', monospace;
+  font-family: 'dtp-FantasqueSansMono', monospace;
   font-size: .95rem;
   color: #ebdbb2;
   background: #282828;
@@ -16,7 +38,7 @@ a, a:link, a:visited, a:hover {
 }
 
 div.linenodiv pre {
-  font-family: 'Fira Mono', monospace;
+  font-family: 'dtp-FantasqueSansMono', monospace;
   margin: 0;
 }
 
@@ -26,7 +48,7 @@ div.codehilite > pre {
 }
 
 pre.code {
-  font-family: 'Fira Mono', monospace;
+  font-family: 'dtp-FantasqueSansMono', monospace;
   padding: .9rem;
   border-radius: 2px;
 }
@@ -41,12 +63,12 @@ div.article_text dl {
 }
 
 div.article_text dl dt {
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 1rem;
 }
 
 div.article_text dl dd {
-  font-family: sans-serif;
+  font-family: serif;
   font-size: .9rem;
   margin-left: .9rem;
 }
@@ -100,26 +122,26 @@ h6 {
 
 /* class */
 .article_title {
-  font-family: 'Gugi', sans-serif;
+  font-family: 'IBMPlexSansKR-Text', sans-serif;
   font-size: 1.75rem;
   font-weight: bold;
 }
 
 .nav, .pagination, .archive_title, .article_tag, .article_meta, .category_title {
-  font-family: 'Gugi', sans-serif;
+  font-family: 'IBMPlexSansKR-Text', sans-serif;
 }
 
 .article_text {
-  font-family: 'Noto Serif KR', serif;
+  font-family: 'RIDIBatang', serif;
 }
 
 .toc {
-  font-family: 'Fira Mono', monospace;
+  font-family: 'RIDIBatang', serif;
   font-size: .9rem;
 }
 
 .codehilitetable {
-    font-family: 'Fira Mono', monospace;
+    font-family: 'dtp-FantasqueSansMono', monospace;
     padding: .8rem;
     border-left: solid 3px #FF8000;
     border-radius: 2px;
@@ -150,7 +172,7 @@ h6 {
 }
 
 #site_title {
-  font-family: 'Gugi', sans-serif;
+  font-family: 'IBMPlexSansKR-Text', sans-serif;
 }
 
 #site_title span a {
