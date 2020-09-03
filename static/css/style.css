@@ -4,6 +4,7 @@
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -11,6 +12,7 @@
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -18,6 +20,7 @@
   src: url("https://cdn.jsdelivr.net/npm/@typopro/dtp-fantasque-sans-mono@3/TypoPRO-FantasqueSansMono-Regular.ttf") format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 code, tt {
