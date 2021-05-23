@@ -13,13 +13,13 @@
     <div class="container">
       <div class="article">
         <div class="article_title"><h1>{{ page.title }}</h1></div>
-        <div id="division"><i class="fas fa-poo" style></i></div>
+        <div id="division"><i class="bi bi-tornado" style></i></div>
         <div class="article_text">{{ page.content }}</div>
-        <div id="division"><i class="far fa-hand-spock"></i></div>
+        <div id="division"><i class="bi bi-tsunami"></i></div>
         <div class="article_meta">
-          <i class="far fa-calendar-plus"></i> {{ article.locale_date }}
-          <i class="fas fa-ellipsis-v"></i>
-          <i class="fas fa-tags">
+          <i class="bi bi-calendar-plus"></i> {{ article.locale_date }}
+          <i class="bi bi-three-dots-vertical"></i>
+          <i class="bi bi-tags">
             {% for tag in article.tags %}
               <a href="{{ SITEURL }}/{{ tag.url }}" class="article_tag">{{ tag }}</a>
             {% endfor %}

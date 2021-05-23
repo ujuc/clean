@@ -5,13 +5,13 @@
     {% for year in range(END_YEAR, 2011, -1) %}
     <div class="container">
       <div class="archive_title">
-        <i class="far fa-keyboard"></i> {{ year }}
+        <i class="bi bi-pen"></i> {{ year }}
       </div>
       {% for article in articles %}
         {% set article_year = article.date.strftime("%Y")|int %}
         {% if article_year == year %}
           <div class="archive_title" style="padding-left: 1em;">
-            <i class="fas fa-cloud-upload-alt"></i> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            <i class="bi bi-cloud-upload"></i> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
           </div>
         {% endif %}
       {% endfor %}

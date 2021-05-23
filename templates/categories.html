@@ -5,8 +5,8 @@
     <div class="container">
       {% for category, articles in categories|sort %}
         <div class="category_title">
-          <i class="far fa-folder-open"></i>
-          <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a> / <i class="far fa-copy"></i> {{ articles|count }}
+          <i class="bi bi-folder2-open"></i>
+          <a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a> / <i class="bi bi-files"></i> {{ articles|count }}
         </div>
       {% endfor %}
     </div>

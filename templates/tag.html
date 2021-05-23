@@ -16,12 +16,12 @@
 
 {% block header %}
   <div class="alert alert-warning">
-    <i class="fas fa-tags"></i> Tag: {{ tag }}
+    <i class="bi bi-tags"></i> Tag: {{ tag }}
     {% if TAG_FEED_ATOM %}
-      | <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" class="alert-link">Atom <i class="fas fa-rss"></i></a>
+      | <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" class="alert-link">Atom <i class="bi bi-rss"></i></a>
     {% endif %}
     {% if TAG_FEED_RSS %}
-      | <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" class="alert-link">RSS <i class="fas fa-rss"></i></a>
+      | <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" class="alert-link">RSS <i class="bi bi-rss"></i></a>
     {% endif %}
   </div>
 {% endblock %}

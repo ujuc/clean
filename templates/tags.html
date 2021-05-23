@@ -8,7 +8,7 @@
         <div class="row">
         {% endif %}
           <div class="col article_tag">
-            <i class="fas fa-tag"></i> <a href="{{ STIEURL }}/{{ tag.url }}">{{ tag }}</a> - <i class="far fa-copy"></i> {{ articles|count }}
+            <i class="bi bi-tag"></i> <a href="{{ STIEURL }}/{{ tag.url }}">{{ tag }}</a> - <i class="bi bi-files"></i> {{ articles|count }}
         </div>
         {% if loop.index % 3 == 0 %}
         </div>

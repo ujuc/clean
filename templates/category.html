@@ -15,12 +15,12 @@
 
 {% block header %}
   <div class="alert alert-warning">
-    <i class="far fa-folder-open"></i> Category: {{ category }}
+    <i class="bi bi-folder2-open"></i> Category: {{ category }}
     {% if CATEGORY_FEED_ATOM %}
-      | <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" class="alert-link">Atom <i class="fas fa-rss"></i></a>
+      | <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" class="alert-link">Atom <i class="bi bi-rss"></i></a>
     {% endif %}
     {% if CATEGORY_FEED_RSS %}
-      | <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" class="alert-link">RSS <i class="fas fa-rss"></i></a>
+      | <a href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_RSS|format(category.slug) }}" class="alert-link">RSS <i class="bi bi-rss"></i></a>
     {% endif %}
   </div>
 {% endblock %}
