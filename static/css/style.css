@@ -1,32 +1,22 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;700&family=IBM+Plex+Mono:wght@300;400;600&display=swap');
 @font-face {
-  font-family: 'IBMPlexSansKR-Text';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'WandohopeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/WandohopeB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-@font-face {
-  font-family: 'RIDIBatang';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'dtp-FantasqueSansMono';
-  src: url("https://cdn.jsdelivr.net/npm/@typopro/dtp-fantasque-sans-mono@3/TypoPRO-FantasqueSansMono-Regular.ttf") format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+:root {
+  --header-font: "WandohopeB", sans-serif;
+  --body-font: "Hahmlet", sans-serif;
+  --code-font: "IBM Plex Mono", monospace;
 }
 
 code, tt {
-  font-family: 'dtp-FantasqueSansMono', monospace;
-  font-size: .95rem;
+  font-family: var(--code-font);
+  font-size: 1.1rem;
   color: #ebdbb2;
   background: #282828;
   padding: 0 .2rem 0 .2rem;
@@ -42,17 +32,18 @@ a, a:link, a:visited, a:hover {
 }
 
 div.linenodiv pre {
-  font-family: 'dtp-FantasqueSansMono', monospace;
+  font-family: var(--code-font);
   margin: 0;
 }
 
 div.codehilite > pre {
-  margin: 10px;
-  padding: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2em;
 }
 
 pre.code {
-  font-family: 'dtp-FantasqueSansMono', monospace;
+  font-family: var(--code-font);
   padding: .9rem;
   border-radius: 2px;
 }
@@ -126,26 +117,26 @@ h6 {
 
 /* class */
 .article_title {
-  font-family: 'IBMPlexSansKR-Text', sans-serif;
+  font-family: var(--header-font);
   font-size: 1.75rem;
   font-weight: bold;
 }
 
-.nav, .pagination, .archive_title, .article_tag, .article_meta, .category_title {
-  font-family: 'IBMPlexSansKR-Text', sans-serif;
+.nav, .pagination, .archive_title {
+  font-family: var(--header-font);
 }
 
-.article_text {
-  font-family: 'RIDIBatang', serif;
+.article_text, .article_tag, .article_meta, .category_title {
+  font-family: var(--body-font);
 }
 
 .toc {
-  font-family: 'RIDIBatang', serif;
+  font-family: var(--body-font);
   font-size: .9rem;
 }
 
 .codehilitetable {
-    font-family: 'dtp-FantasqueSansMono', monospace;
+    font-family: var(--code-font);
     padding: .8rem;
     border-left: solid 3px #FF8000;
     border-radius: 2px;
@@ -176,7 +167,7 @@ h6 {
 }
 
 #site_title {
-  font-family: 'IBMPlexSansKR-Text', sans-serif;
+  font-family: var(--header-font);
 }
 
 #site_title span a {
