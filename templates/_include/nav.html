@@ -1,23 +1,21 @@
-<div class="container" style="margin-top: 10px;">
-  <nav class="nav">
-    {% for name, link, fa in MENUITEMS %}
-      <li class="nav-item">
-        <a class="nav-link" href="{{ link }}">
-          <i class="bi bi-{{ fa }}"></i> {{ name }}
-        </a>
-      </li>
-    {% endfor %}
-    {% if DISPLAY_PAGES_ON_MENU %}
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
-          <i class="bi bi-newspaper"></i> Pages
-        </a>
-        <div class="dropdown-menu">
-          {% for name, link in LINKS %}
-            <a class="dropdown-item" href="{{ link }}"><i class="fas fa-paper-plane-o"></i> {{ name }}</a>
-          {% endfor %}
-        </div>
-      </li>
-    {% endif %}
-  </nav>
-</div>
+<nav class="nav">
+  {% for name, link, fa in MENUITEMS %}
+    <li class="nav-item">
+      <a class="nav-link" href="{{ link }}">
+        <i class="bi bi-{{ fa }}"></i> {{ name }}
+      </a>
+    </li>
+  {% endfor %}
+  {% if DISPLAY_PAGES_ON_MENU %}
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+        <i class="bi bi-newspaper"></i> Pages
+      </a>
+      <div class="dropdown-menu">
+        {% for name, link in LINKS %}
+          <a class="dropdown-item" href="{{ link }}"><i class="fas fa-paper-plane-o"></i> {{ name }}</a>
+        {% endfor %}
+      </div>
+    </li>
+  {% endif %}
+</nav>
