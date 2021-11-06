@@ -7,12 +7,14 @@
 {% block content %}
     <div class="container">
       <div class="article">
-        <div class="article_title"><h1>{{ article.title }}</h1></div>
+        <div class="article_title">{{ article.title }}</div>
         <div class="article_meta">
-          <i class="bi bi-calendar-plus"></i> {{ article.locale_date }}
-          {% if article.modifed %} / <i class="bi bi-arrow-repeat"></i> {{ article.locale_modified }} {% endif %}
+          <i class="bi bi-calendar-plus"></i> 
+            {{ article.locale_date }}
+            {% if article.modified %} / <i class="bi bi-arrow-repeat"></i> {{ article.locale_modified }} {% endif %}
           <i class="bi bi-three-dots-vertical"></i>
-          <i class="bi bi-folder2-open"></i> <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+          <i class="bi bi-folder2-open"></i> 
+            <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
           <i class="bi bi-three-dots-vertical"></i>
           <i class="bi bi-tags">
             {% for tag in article.tags %}
