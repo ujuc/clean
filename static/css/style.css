@@ -1,55 +1,14 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;700&family=IBM+Plex+Mono:wght@300;400;600&display=swap');
-@font-face {
-    font-family: 'WandohopeB';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/WandohopeB.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Gowun+Batang:wght@400;700&display=swap');
 
 :root {
-  --header-font: "WandohopeB", sans-serif;
-  --body-font: "Hahmlet", sans-serif;
-  --code-font: "IBM Plex Mono", monospace;
-}
-
-code, tt {
-  font-family: var(--code-font);
-  font-size: 1.1rem;
-  color: #ebdbb2;
-  background: #282828;
-  padding: 0 .2rem 0 .2rem;
-  border-radius: 2px;
-}
-
-a > code {
-  color: #ebdbb2;
+  --header-font: "Dongle", sans-serif;
+  --body-font: "Gowun Batang", sans-serif;
 }
 
 a, a:link, a:visited, a:hover {
   color: #4335a4;
-}
-
-div.linenodiv pre {
-  font-family: var(--code-font);
-  margin: 0;
-}
-
-div.codehilite > pre {
-  margin-right: auto;
-  margin-left: auto;
-  padding: 2em;
-}
-
-pre.code {
-  font-family: var(--code-font);
-  padding: .9rem;
-  border-radius: 2px;
-}
-
-div.article_text table.codehilitetable {
-  margin-bottom: 1rem;
 }
 
 div.article_text dl {
@@ -58,12 +17,10 @@ div.article_text dl {
 }
 
 div.article_text dl dt {
-  font-family: serif;
   font-size: 1rem;
 }
 
 div.article_text dl dd {
-  font-family: serif;
   font-size: .9rem;
   margin-left: .9rem;
 }
@@ -73,7 +30,7 @@ img {
 }
 
 blockquote {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #649098;
 }
 
@@ -92,54 +49,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin-top: 1.8rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  margin-top: 1.4rem;
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
 }
 
 h6 {
   font-size: 1.1rem;
+  margin-top: 1.1rem;
 }
 
 /* class */
 .article_title {
   font-family: var(--header-font);
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
-.nav, .pagination, .archive_title {
+.nav, .pagination {
   font-family: var(--header-font);
+  font-size: 1.5rem;
 }
 
-.article_text, .article_tag, .article_meta, .category_title {
+.article_text, .article_tag, .article_meta .category_title, .archive_title {
   font-family: var(--body-font);
 }
 
 .toc {
   font-family: var(--body-font);
   font-size: .9rem;
-}
-
-.codehilitetable {
-    font-family: var(--code-font);
-    padding: .8rem;
-    border-left: solid 3px #FF8000;
-    border-radius: 2px;
 }
 
 .pagination {
@@ -152,7 +109,7 @@ h6 {
 
 .footnote-reference {
   vertical-align: super;
-  font-size: 75%;
+  font-size: .7rem;
   line-height: 1;
   font-weight: 700;
   text-align: center;
@@ -160,7 +117,6 @@ h6 {
 }
 
 /* id */
-
 #site_footer {
   font-size: .8rem;
   color: #93a1a1;
@@ -180,46 +136,10 @@ h6 {
 
 #social {
   font-size: 1rem;
-  margin-right: 0.2rem;
+  margin-right: .2rem;
 }
 
-/* font awesome */
-i.fa-calendar-plus {
-  color: black;
-}
-
-i.fa-ellipsis-v {
-  color: black;
-  font-size: 1rem;
-  margin: 0 .5rem 0 .5rem;
-}
-
-i.fa-tag, i.fa-tags {
-  color: black;
-}
-
-i.fa-inbox {
-  color: black;
-}
-
-i.fa-archive {
-  color: black;
-}
-
-i.fa-folder-open {
-  color: black;
-}
-
-i.fa-keyboard {
-  color: darkslategray;
-}
-
-i.fa-poo {
-  color: peru;
-  opacity: 30%;
-}
-
-i.fa-hand-spock {
-  color: darkblue;
-  opacity: 30%;
+/* icon */
+i {
+  font-size: .8rem;
 }

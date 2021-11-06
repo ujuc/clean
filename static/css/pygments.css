@@ -2,19 +2,27 @@
   https://github.com/daveyarwood/gruvbox-pygments
   gruvbox
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+ 
+:root {
+  --code-font: "PT Mono", monospace;
+}
+
 div.codehilite > pre {
-  background-color: #282828;
+  background-color: #494848;
   color: #ebdbb2;
-  font-family: 'Fira Mono', monospace;
-  font-size: 14px;
-  margin-left: 10px;
+  font-family: var(--code-font);
+  font-size: .9rem;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .code {
-  background-color: #282828;
+  background-color: #494848;
   color: #ebdbb2;
-  font-family: 'Fira Mono', monospace;
-  font-size: 14px;
+  font-family: var(--code-font);
+  font-size: .9rem;
 }
 
 /* Comment */
