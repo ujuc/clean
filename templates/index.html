@@ -8,8 +8,8 @@
           <a href="{{ SITEURL }}/{{ article.url }}" class="article_title">{{ article.title }}</a>
         </div>
         <div class="article_meta">
-          <i class="bi bi-calendar-plus"></i> {{ article.locale_date }}
-          {% if article.modified %} / <i class="bi bi-arrow-repeat"></i>{{ article.locale_modified }}{% endif %}
+          <em class="fa-regular fa-calendar-plus"></em> {{ article.locale_date }}
+          {% if article.modified %} / <em class="fa-solid fa-arrows-rotate"></em> {{ article.locale_modified }}{% endif %}
         </div>
         <div class="article_text">{{ article.summary }}</div>
       </div>

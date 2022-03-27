@@ -18,10 +18,10 @@
   <div class="alert alert-warning">
     <i class="bi bi-tags"></i> Tag: {{ tag }}
     {% if TAG_FEED_ATOM %}
-      | <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" class="alert-link">Atom <i class="bi bi-rss"></i></a>
+      | <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" class="alert-link">Atom <em class="fa-solid fa-rss"></em></a>
     {% endif %}
     {% if TAG_FEED_RSS %}
-      | <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" class="alert-link">RSS <i class="bi bi-rss"></i></a>
+      | <a href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" class="alert-link">RSS <em class="fa-solid fa-rss"></em></a>
     {% endif %}
   </div>
 {% endblock %}

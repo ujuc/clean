@@ -3,8 +3,8 @@
     <hr />
     <p><a href="{{ SITEURL }}" class="article_title">{{ SITENAME }}</a></p>
     <p>{{ SITESUBTITLE }}</p>
-    {% for name, link, bi in SOCIAL %}
-    <span id="social-{{ name|lower }}"><a href="{{ link }}"><i class="bi bi-{{ bi }}"></i></a></span>
+    {% for name, link, fa in SOCIAL %}
+    <span id="social-{{ name|lower }}"><a href="{{ link }}"><em class="fa-brands fa-{{ fa }}"></em></a></span>
     {% endfor %}
   </div>
 </div>

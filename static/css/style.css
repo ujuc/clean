@@ -140,6 +140,6 @@ h6 {
 }
 
 /* icon */
-i {
-  font-size: .8rem;
+.svg-inline--fa {
+  font-size: .9rem;
 }
