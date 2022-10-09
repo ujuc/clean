@@ -3,10 +3,10 @@
   gruvbox
  */
 
- @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
- 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
-  --code-font: "PT Mono", monospace;
+  --code-font: 'Ubuntu Mono', 'Nanum Gothic Coding', monospace;
 }
 
 div.codehilite > pre {
