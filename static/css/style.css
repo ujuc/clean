@@ -33,7 +33,8 @@
 }
 
 a, a:link, a:visited, a:hover {
-  color: #4335a4;
+  color: #000000;
+  text-decoration: none;
 }
 
 div.article_text dl {
