@@ -1,10 +1,15 @@
 <div class="row">
   <div class="container">
-    <hr />
-    <p><a href="{{ SITEURL }}" class="article_title">{{ SITENAME }}</a></p>
-    <p>{{ SITESUBTITLE }}</p>
+  <div class="site-title">
+    <a href="{{ SITEURL }}">{{ SITENAME }}</a>
+  </div>
+  <div class="site-body">
+    {{ SITESUBTITLE }}
+  </div>
+  <div>
     {% for name, link, fa in SOCIAL %}
     <span id="social-{{ name|lower }}"><a href="{{ link }}"><em class="fa-brands fa-{{ fa }}"></em></a></span>
     {% endfor %}
+  </div>
   </div>
 </div>
