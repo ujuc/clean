@@ -149,6 +149,7 @@ h6 {
 
 .article-text {
   font-family: var(--body-font);
+  font-size: var(--body-font-size);
 }
 
 .pagination {
@@ -156,8 +157,9 @@ h6 {
   font-size: .9rem;
 }
 
-.category_title {
+.category-title {
   font-family: var(--body-font);
+  font-size: var(--body-font-size);
 }
 
 .toc {
