@@ -120,6 +120,17 @@ h6 {
   font-size: .95rem;
 }
 
+.archive-title {
+  font-family: var(--article-title-font);
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.archive-body {
+  font-family: var(--article-title-font);
+  font-size: .95rem;
+}
+
 .article_title {
   font-family: var(--header-font);
   font-size: 2rem;
@@ -131,7 +142,7 @@ h6 {
   font-size: 1.5rem;
 }
 
-.article_text, .article_tag, .article_meta .category_title, .archive_title {
+.article_text, .article_tag, .article_meta .category_title {
   font-family: var(--body-font);
 }
 

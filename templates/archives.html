@@ -1,21 +1,21 @@
 {% extends "shell.html" %}
 
 {% block content %}
-  <div class="row">
-    {% for year in range(END_YEAR, 2011, -1) %}
-    <div class="container">
-      <div class="archive_title">
-        <em class="fa-solid fa-square-pen"></em> {{ year }}
-      </div>
-      {% for article in articles %}
-        {% set article_year = article.date.strftime("%Y")|int %}
-        {% if article_year == year %}
-          <div class="archive_title" style="padding-left: 1em;">
-            <em class="fa-solid fa-cloud-arrow-up"></em> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-          </div>
-        {% endif %}
-      {% endfor %}
+<div class="row">
+  {% for year in range(END_YEAR, 2011, -1) %}
+  <div class="container">
+    <div class="archive-title">
+      <em class="fa-solid fa-square-pen"></em> {{ year }}
     </div>
+    {% for article in articles %}
+      {% set article_year = article.date.strftime("%Y")|int %}
+      {% if article_year == year %}
+        <div class="archive-body" style="padding-left: 1em;">
+          <em class="fa-solid fa-cloud-arrow-up"></em> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+        </div>
+      {% endif %}
     {% endfor %}
   </div>
+  {% endfor %}
+</div>
 {% endblock %}
