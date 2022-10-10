@@ -154,21 +154,21 @@ h6 {
 }
 
 /* id */
-#site_footer {
-  font-size: .8rem;
-  color: #93a1a1;
+#site-article {
+  margin-top: 20px;
 }
 
-#site_title {
+#site-title {
   font-family: var(--header-font);
 }
 
-#site_title span a {
+#site-title span a {
   color: #000;
 }
 
-#site_article {
-  margin-top: 20px;
+#site-footer {
+  font-size: .8rem;
+  color: #93a1a1;
 }
 
 #social {
