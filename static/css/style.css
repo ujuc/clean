@@ -105,13 +105,18 @@ h6 {
 }
 
 /* class */
+.nav-link {
+  font-family: var(--article-title-font);
+  font-size: .9rem;
+}
+
 .article_title {
   font-family: var(--header-font);
   font-size: 2rem;
   font-weight: bold;
 }
 
-.nav, .pagination {
+.pagination {
   font-family: var(--header-font);
   font-size: 1.5rem;
 }
@@ -142,6 +147,12 @@ h6 {
   white-space: nowrap;
 }
 
+/* icon */
+.svg-inline--fa {
+  font-size: .85rem;
+  margin-bottom: 1px;
+}
+
 /* id */
 #site_footer {
   font-size: .8rem;
@@ -163,9 +174,4 @@ h6 {
 #social {
   font-size: 1rem;
   margin-right: .2rem;
-}
-
-/* icon */
-.svg-inline--fa {
-  font-size: .9rem;
 }
