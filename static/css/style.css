@@ -131,6 +131,11 @@ h6 {
   font-size: .95rem;
 }
 
+.article-tag {
+  font-family: var(--body-font);
+  font-size: .95rem;
+}
+
 .article_title {
   font-family: var(--header-font);
   font-size: 2rem;
@@ -142,7 +147,7 @@ h6 {
   font-size: 1.5rem;
 }
 
-.article_text, .article_tag, .article_meta .category_title {
+.article_text, .article_meta .category_title {
   font-family: var(--body-font);
 }
 
@@ -170,7 +175,7 @@ h6 {
 
 /* icon */
 .svg-inline--fa {
-  font-size: .85rem;
+  font-size: .65rem;
   margin-bottom: 1px;
 }
 

@@ -7,8 +7,8 @@
         {% if loop.index == 1 %}
         <div class="row">
         {% endif %}
-          <div class="col article_tag">
-            <em class="fa-solid fa-tags"></em> <a href="{{ STIEURL }}/{{ tag.url }}">{{ tag }}</a> -  <em class="fa-solid fa-file-lines"></em> {{ articles|count }}
+          <div class="col article-tag">
+            <em class="fa-solid fa-tags"></em> <a href="{{ STIEURL }}/{{ tag.url }}">{{ tag }}</a> <em class="fa-solid fa-file-lines"></em> {{ articles|count }}
         </div>
         {% if loop.index % 3 == 0 %}
         </div>
@@ -16,7 +16,7 @@
         {% endif %}
         {% if loop.last %}
           {% for _ in range((loop.index % 3) - 1) %}
-            <div class="col article_tag"></div>
+            <div class="col article-tag"></div>
           {% endfor %}
         {% endif %}
       {% endfor %}
