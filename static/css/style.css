@@ -37,18 +37,18 @@ a, a:link, a:visited, a:hover {
   text-decoration: none;
 }
 
-div.article_text dl {
+div.article-text dl {
   margin-left: .6rem;
   margin-bottom: 0;
 }
 
-div.article_text dl dt {
-  font-size: 1rem;
+div.article-text dl dt {
+  font-size: .9rem;
 }
 
-div.article_text dl dd {
-  font-size: .9rem;
-  margin-left: .9rem;
+div.article-text dl dd {
+  font-size: .85rem;
+  margin-left: 1rem;
 }
 
 img {
@@ -56,7 +56,7 @@ img {
 }
 
 blockquote {
-  font-size: 0.9rem;
+  font-size: .9rem;
   color: #649098;
 }
 
@@ -71,27 +71,28 @@ article div.gist{
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font);
   font-weight: bold;
 }
 
 h1 {
-  font-size: 2rem;
-  margin-top: 2rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-top: 1.8rem;
-}
-
-h3 {
   font-size: 1.6rem;
   margin-top: 1.6rem;
 }
 
-h4 {
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+h3 {
   font-size: 1.4rem;
   margin-top: 1.4rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  margin-top: 1.3rem;
 }
 
 h5 {
@@ -136,28 +137,32 @@ h6 {
   font-size: .95rem;
 }
 
-.article_title {
-  font-family: var(--header-font);
-  font-size: 2rem;
-  font-weight: bold;
+.article-title {
+  font-family: var(--article-title-font);
+  font-size: var(--article-title-font-size);
+}
+
+.article-meta {
+  font-family: var(--body-font);
+  font-size: .85rem;
+}
+
+.article-text {
+  font-family: var(--body-font);
 }
 
 .pagination {
-  font-family: var(--header-font);
-  font-size: 1.5rem;
+  font-family: var(--body-font);
+  font-size: .9rem;
 }
 
-.article_text, .article_meta .category_title {
+.category_title {
   font-family: var(--body-font);
 }
 
 .toc {
   font-family: var(--body-font);
   font-size: .9rem;
-}
-
-.pagination {
-  margin-bottom: 0;
 }
 
 .alert {
