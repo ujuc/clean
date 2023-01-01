@@ -42,6 +42,11 @@ div.article-text dl {
   margin-bottom: 0;
 }
 
+div.article-text a {
+  color:#804700;
+  border-bottom: 3px solid #e1e1e1
+}
+
 div.article-text dl dt {
   font-size: .9rem;
 }
