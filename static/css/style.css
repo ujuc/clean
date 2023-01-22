@@ -1,5 +1,6 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css");
 
 @font-face {
   font-family: 'ChusaLove';
@@ -15,20 +16,13 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'NanumSquareRound';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* Var */
 :root {
   --site-title-font: 'ChusaLove', serif;
   --article-title-font: 'Binggrae', serif;
   --article-title-font-size: 1.8rem;
   --header-font: 'IBM Plex Sans', sans-serif;
-  --body-font: 'NanumSquareRound', sans-serif;
+  --body-font: 'NanumSquareNeo', sans-serif;
   --body-font-size: .95rem;
 }
 
