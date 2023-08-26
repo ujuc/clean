@@ -179,6 +179,10 @@ h6 {
   white-space: nowrap;
 }
 
+.highlight pre {
+  margin: 0;
+}
+
 /* icon */
 .svg-inline--fa {
   font-size: .65rem;
