@@ -21,7 +21,6 @@ clean/
 │       └── style.css      # Main theme stylesheet
 └── templates/             # Jinja2 templates
     ├── _include/          # Reusable template components
-    │   ├── buy_me_a_coffee.html  # Donation widget
     │   ├── footer.html           # Site footer
     │   ├── ga.html              # Google Analytics
     │   ├── gads.html            # Google AdSense
@@ -70,7 +69,6 @@ clean/
 ### Analytics & Monetization
 - Google Analytics integration
 - Google AdSense support
-- Buy Me a Coffee donation widget
 
 ## Template Hierarchy
 

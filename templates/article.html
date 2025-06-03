@@ -31,13 +31,6 @@
     <div class="article-text">{{ article.content }}</div>
     <div class="text-center"><em class="fa-regular fa-hand-spock"></em></div>
 
-  <!-- Buy me a coffee -->
-    {% if BMC_CODE %}
-    <div class="text-center">
-      {% include "_include/buy_me_a_coffee.html" %}
-    </div>
-    {% endif %}
-
   <!-- Comment -->
     {% if GISCUS %}
       {% include "_include/giscus.html" %}
