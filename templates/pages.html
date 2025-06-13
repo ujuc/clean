@@ -10,31 +10,45 @@
     <div class="article">
       <div class="article-title">Pages</div>
 
-      {% set directories = [] %}
+      {% set dirs = { 'root': [] } %}
       {% for page in pages %}
-        {% set url_parts = page.url.split('/') %}
-        {% if url_parts|length > 1 %}
-          {% set directory = url_parts[0] %}
-        {% else %}
-          {% set directory = 'Root' %}
-        {% endif %}
-        {% if directory not in directories %}
-          {% set _ = directories.append(directory) %}
+        {% set url_parts = page.url.split('/')[:-1] %}
+        {% if url_parts|length == 1 %}
+          {% set _ = dirs['root'].append(url_parts[0]) %}
+        {% elif url_parts|length > 1 %}
+          {% if url_parts[0] not in dirs %}
+            {% set _ = dirs.update({url_parts[0]: []}) %}
+          {% endif %}
+          {% set _ = dirs[url_parts[0]].append(url_parts[1]) %}
         {% endif %}
       {% endfor %}
 
-      {% for directory in directories|sort %}
+      <div class="archive-title">
+        <em class="fa-solid fa-folder-open"></em> Root
+      </div>
+      {% for dir in dirs['root']|sort %}
+        {% for page in pages %}
+          {% set url_parts = page.url.split('/')[:-1] %}
+          {% if url_parts[0] == dir %}
+        <div class="archive-body" style="padding-left: 1em;">
+          <em class="fa-solid fa-file-lines"></em>
+          <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>
+        </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      {% set _ = dirs.pop('root') %}
+
+      {% for dir in dirs|sort %}
         <div class="archive-title">
-          <em class="fa-solid fa-folder-open"></em> {{ directory|title }}
+          <em class="fa-solid fa-folder-open"></em> {{ dir|title }}
         </div>
         {% for page in pages %}
-          {% set url_parts = page.url.split('/') %}
-          {% set page_dir = url_parts[0] if url_parts|length > 1 else 'Root' %}
-          {% if page_dir == directory %}
-          {{page.category}}
+          {% set url_parts = page.url.split('/')[:-1] %}
+          {% if url_parts[0] in dir %}
             <div class="archive-body" style="padding-left: 1em;">
               <em class="fa-solid fa-file-lines"></em>
-              <a href="{{ SITEURL }}/pages/{{ page.url }}">{{ page.title }}</a>
+              <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>
             </div>
           {% endif %}
         {% endfor %}
