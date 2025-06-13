@@ -5,28 +5,45 @@
 {% endblock %}
 
 {% block title %}
-  {{ page.title }}
+/{{ page.title }}
 {% endblock %}
 
 {% block content %}
-  <div class="row">
-    <div class="container">
-      <div class="article">
-        <div class="article_title"><h1>{{ page.title }}</h1></div>
-        <div id="division"><em class="fa-solid fa-poo-storm"></em></div>
-        <div class="article_text">{{ page.content }}</div>
-        <div id="division"><em class="fa-regular fa-hand-spock"></i></div>
-        <div class="article_meta">
-          <em class="fa-regular fa-calendar-plus"></em> {{ article.locale_date }}
-          <em class="fa-solid fa-ellipsis-vertical"></em>
-          <em class="fa-solid fa-tags"></em>
-            {% for tag in article.tags %}
-              <a href="{{ SITEURL }}/{{ tag.url }}" class="article_tag">{{ tag }}</a>
-            {% endfor %}
-          </i>
-        </div>
-        <div style="text-align: center">🎗</div>
-      </div>
+<div class="container">
+  <div class="article">
+  <!-- Title -->
+    <div class="article-title">{{ page.title }}</div>
+
+  <!-- Meta -->
+    {% if page.date or page.modified or page.category or page.tags %}
+    <div class="article-meta">
+      {% if page.date %}
+      <em class="fa-regular fa-calendar-plus"></em>
+        {{ page.date.strftime('%Y-%m-%d') }}
+        {% if page.modified %} / <em class="fa-solid fa-arrows-rotate"></em> {{ page.modified.strftime('%Y-%m-%d') }} {% endif %}
+      {% endif %}
+      {% if page.category %}
+      <em class="fa-solid fa-ellipsis-vertical"></em>
+      <em class="fa-solid fa-folder-open"></em>
+        <a href="{{ SITEURL }}/{{ page.category.url }}">{{ page.category }}</a>
+      {% endif %}
+      {% if page.tags %}
+      <em class="fa-solid fa-ellipsis-vertical"></em>
+      <em class="fa-solid fa-tags"></em>
+        {% for tag in page.tags %}
+        <a href="{{ SITEURL }}/{{ tag.url }}" class="article_tag">{{ tag }}</a>
+        {% if not loop.last %}, {% endif %}
+        {% endfor %}
+      {% endif %}
     </div>
+    {% endif %}
+
+  <!--Page Content -->
+    <div class="text-center"><em class="fa-solid fa-poo-storm"></em></div>
+    <div class="article-text">{{ page.content }}</div>
+    <div class="text-center"><em class="fa-regular fa-hand-spock"></em></div>
+
+    <div class="text-center">🎗</div>
   </div>
+</div>
 {% endblock %}

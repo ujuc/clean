@@ -37,6 +37,7 @@ clean/
     ├── category.html        # Single category template
     ├── index.html           # Homepage template
     ├── page.html            # Static page template
+    ├── pages.html           # Pages directory listing template
     ├── shell.html           # Base template (extends all others)
     ├── tag.html             # Single tag template
     └── tags.html            # Tags index template
@@ -76,9 +77,10 @@ clean/
 2. **index.html** - Homepage with article summaries and pagination
 3. **article.html** - Individual post template with comments and metadata
 4. **page.html** - Static pages template
-5. **archives.html** - Chronological article listing
-6. **categories.html/category.html** - Category-based navigation
-7. **tags.html/tag.html** - Tag-based navigation
+5. **pages.html** - Directory-organized pages listing template
+6. **archives.html** - Chronological article listing
+7. **categories.html/category.html** - Category-based navigation
+8. **tags.html/tag.html** - Tag-based navigation
 
 ## CSS Variables
 
@@ -97,6 +99,7 @@ The theme uses CSS custom properties for easy customization:
 
 ## Framework Dependencies
 
+- **Jinja**: fast, expressive, extensible templating engine.
 - **Bootstrap**: Responsive grid and components
 - **Font Awesome**: Icon fonts for UI elements
 - **Pygments**: Syntax highlighting for code blocks
@@ -118,8 +121,11 @@ Key Pelican variables used throughout templates:
 - `SITENAME`, `AUTHOR` - Site metadata
 - `DEFAULT_LANG` - Language settings (ko-KR)
 - `SITEURL` - Base URL for links
+- `MENU` - Navigation menu items with Font Awesome icons
+- `DISPLAY_PAGES_ON_MENU` - Controls pages link in navigation
 - `article.title`, `article.summary`, `article.tags` - Article metadata
 - `article.locale_date`, `article.locale_modified` - Localized dates
+- `pages` - Collection of static pages for directory organization
 
 ## Integration Notes
 

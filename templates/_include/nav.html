@@ -7,15 +7,10 @@
     </li>
   {% endfor %}
   {% if DISPLAY_PAGES_ON_MENU %}
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+    <li class="nav-item">
+      <a class="nav-link" href="{{ SITEURL }}/pages.html">
         <em class="fa-solid fa-newspaper"></em> Pages
       </a>
-      <div class="dropdown-menu">
-        {% for name, link in LINKS %}
-          <a class="dropdown-item" href="{{ link }}"><em class="fa-regular fa-paper-plane"></em> {{ name }}</a>
-        {% endfor %}
-      </div>
     </li>
   {% endif %}
 </ul>

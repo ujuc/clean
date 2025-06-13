@@ -1,0 +1,45 @@
+{% extends "shell.html" %}
+
+{% block title %}
+/Pages
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="container">
+    <div class="article">
+      <div class="article-title">Pages</div>
+
+      {% set directories = [] %}
+      {% for page in pages %}
+        {% set url_parts = page.url.split('/') %}
+        {% if url_parts|length > 1 %}
+          {% set directory = url_parts[0] %}
+        {% else %}
+          {% set directory = 'Root' %}
+        {% endif %}
+        {% if directory not in directories %}
+          {% set _ = directories.append(directory) %}
+        {% endif %}
+      {% endfor %}
+
+      {% for directory in directories|sort %}
+        <div class="archive-title">
+          <em class="fa-solid fa-folder-open"></em> {{ directory|title }}
+        </div>
+        {% for page in pages %}
+          {% set url_parts = page.url.split('/') %}
+          {% set page_dir = url_parts[0] if url_parts|length > 1 else 'Root' %}
+          {% if page_dir == directory %}
+          {{page.category}}
+            <div class="archive-body" style="padding-left: 1em;">
+              <em class="fa-solid fa-file-lines"></em>
+              <a href="{{ SITEURL }}/pages/{{ page.url }}">{{ page.title }}</a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
