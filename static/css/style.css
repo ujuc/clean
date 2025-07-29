@@ -50,6 +50,10 @@ div.article-text dl dd {
   margin-left: 1rem;
 }
 
+div.page-title h1, div.page-title h2, div.page-title h3 {
+  margin-top: 0.5rem;
+}
+
 img {
   max-width: 100%;
 }
