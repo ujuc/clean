@@ -6,11 +6,16 @@
       </a>
     </li>
   {% endfor %}
-  {% if DISPLAY_PAGES_ON_MENU %}
+  {% if PAGE_MENU|length > 0 %}
     <li class="nav-item">
-      <a class="nav-link" href="{{ SITEURL }}/pages.html">
-        <em class="fa-solid fa-newspaper"></em> Pages
-      </a>
+        <a class="nav-link disabled"><em class="fa-solid fa-ellipsis-v"></em></a>
     </li>
   {% endif %}
+  {% for name, link, fa in PAGE_MENU %}
+    <li class="nav-item">
+      <a class="nav-link" href="{{ link }}">
+        <em class="fa-solid fa-{{ fa }}"></em> {{ name }}
+      </a>
+    </li>
+  {% endfor %}
 </ul>
