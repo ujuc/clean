@@ -1,209 +1,223 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
 
 @font-face {
-  font-family: 'ChusaLove';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/ChusaLove.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
+    font-family: "ChusaLove";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/ChusaLove.woff2")
+        format("woff2");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Binggrae';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Binggrae";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Var */
 :root {
-  --site-title-font: 'ChusaLove', serif;
-  --article-title-font: 'Binggrae', serif;
-  --article-title-font-size: 1.8rem;
-  --header-font: 'IBM Plex Sans', sans-serif;
-  --body-font: 'NanumSquareNeo', sans-serif;
-  --body-font-size: .95rem;
+    --site-title-font: "ChusaLove", serif;
+    --article-title-font: "Binggrae", serif;
+    --article-title-font-size: 1.8rem;
+    --header-font: "IBM Plex Sans", sans-serif;
+    --body-font: "Nanum Gothic Coding", sans-serif;
+    --body-font-size: 0.95rem;
 }
 
-a, a:link, a:visited, a:hover {
-  color: #000000;
-  text-decoration: none;
+a,
+a:link,
+a:visited,
+a:hover {
+    color: #000000;
+    text-decoration: none;
 }
 
 div.article-text dl {
-  margin-left: .6rem;
-  margin-bottom: 0;
+    margin-left: 0.6rem;
+    margin-bottom: 0;
 }
 
 div.article-text a {
-  color:#804700;
-  border-bottom: 3px solid #e1e1e1
+    color: #804700;
+    border-bottom: 3px solid #e1e1e1;
 }
 
 div.article-text dl dt {
-  font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 div.article-text dl dd {
-  font-size: .85rem;
-  margin-left: 1rem;
+    font-size: 0.85rem;
+    margin-left: 1rem;
 }
 
-div.page-title h1, div.page-title h2, div.page-title h3 {
-  margin-top: 0.5rem;
+div.page-title h1,
+div.page-title h2,
+div.page-title h3 {
+    margin-top: 0.5rem;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 blockquote {
-  font-size: .9rem;
-  color: #649098;
+    font-size: 0.9rem;
+    color: #649098;
 }
 
-table, th, td {
-  border: .1rem solid lightgray;
-  background: white;
-  padding: .3rem;
+table,
+th,
+td {
+    border: 0.1rem solid lightgray;
+    background: white;
+    padding: 0.3rem;
 }
 
-article div.gist{
-  line-height: .875rem;
+article div.gist {
+    line-height: 0.875rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--header-font);
-  font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--header-font);
+    font-weight: bold;
 }
 
 h1 {
-  font-size: 1.6rem;
-  margin-top: 1.6rem;
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 h3 {
-  font-size: 1.4rem;
-  margin-top: 1.4rem;
+    font-size: 1.4rem;
+    margin-top: 1.4rem;
 }
 
 h4 {
-  font-size: 1.3rem;
-  margin-top: 1.3rem;
+    font-size: 1.3rem;
+    margin-top: 1.3rem;
 }
 
 h5 {
-  font-size: 1.2rem;
-  margin-top: 1.2rem;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
 }
 
 h6 {
-  font-size: 1.1rem;
-  margin-top: 1.1rem;
+    font-size: 1.1rem;
+    margin-top: 1.1rem;
 }
 
 /* class */
 .nav-link {
-  font-family: var(--article-title-font);
-  font-size: .9rem;
+    font-family: var(--article-title-font);
+    font-size: 0.9rem;
 }
 
 .site-title {
-  font-family: var(--site-title-font);
-  font-size: 1.2rem;
+    font-family: var(--site-title-font);
+    font-size: 1.2rem;
 }
 
 .site-body {
-  font-family: var(--body-font);
-  font-size: .95rem;
+    font-family: var(--body-font);
+    font-size: 0.95rem;
 }
 
 .archive-title {
-  font-family: var(--article-title-font);
-  font-size: 1.05rem;
-  font-weight: bold;
+    font-family: var(--article-title-font);
+    font-size: 1.05rem;
+    font-weight: bold;
 }
 
 .archive-body {
-  font-family: var(--article-title-font);
-  font-size: .95rem;
+    font-family: var(--article-title-font);
+    font-size: 0.95rem;
 }
 
 .article-tag {
-  font-family: var(--body-font);
-  font-size: .95rem;
+    font-family: var(--body-font);
+    font-size: 0.95rem;
 }
 
 .article-title {
-  font-family: var(--article-title-font);
-  font-size: var(--article-title-font-size);
+    font-family: var(--article-title-font);
+    font-size: var(--article-title-font-size);
 }
 
 .article-meta {
-  font-family: var(--body-font);
-  font-size: .85rem;
+    font-family: var(--body-font);
+    font-size: 0.85rem;
 }
 
 .article-text {
-  font-family: var(--body-font);
-  font-size: var(--body-font-size);
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
 }
 
 .pagination {
-  font-family: var(--body-font);
-  font-size: .9rem;
+    font-family: var(--body-font);
+    font-size: 0.9rem;
 }
 
 .category-title {
-  font-family: var(--body-font);
-  font-size: var(--body-font-size);
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
 }
 
 .toc {
-  font-family: var(--body-font);
-  font-size: .9rem;
+    font-family: var(--body-font);
+    font-size: 0.9rem;
 }
 
 .alert p {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .footnote-reference {
-  vertical-align: super;
-  font-size: .7rem;
-  line-height: 1;
-  font-weight: 700;
-  text-align: center;
-  white-space: nowrap;
+    vertical-align: super;
+    font-size: 0.7rem;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .highlight pre {
-  margin: 0;
+    margin: 0;
 }
 
 /* icon */
 .svg-inline--fa {
-  font-size: .65rem;
-  margin-bottom: 1px;
+    font-size: 0.65rem;
+    margin-bottom: 1px;
 }
 
 /* id */
 #site-article {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 #site-footer {
-  font-size: .8rem;
-  color: #93a1a1;
+    font-size: 0.8rem;
+    color: #93a1a1;
 }
 
 #social {
-  font-size: 1rem;
-  margin-right: .2rem;
+    font-size: 1rem;
+    margin-right: 0.2rem;
 }
